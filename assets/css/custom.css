@@ -1,0 +1,113 @@
+/* modificações no bootstrap */
+html:focus-within{
+    scroll-behavior: smooth !important;
+}
+
+.text-white{
+    color: #f3f3f3 !important;
+}
+
+.navbar-dark{
+    background-color: red;
+}
+
+body{
+    color:black;
+}
+
+.bg-secondary{
+    /*color: #534d56;*/
+    background-color: #3C2439!important;
+}
+
+.nav-link{
+    color: #f7f7f7 !important; 
+}
+
+.show{
+    color: #f7f7f7 !important;
+
+}
+
+.btn-primary{
+    background-color: #502F4C;
+    border-color: #502F4C;
+}
+
+.btn-primary:hover{
+    background-color: #3C2439;
+    border-color: #3C2439;
+}
+
+.btn-dark{
+    color: #281826 !important;
+}
+
+.btn-dark:hover{
+    color: #140C13 !important;
+}
+
+/* scroll up */
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: #8f729e;
+    opacity: .8;
+    padding:  0 .3rem;
+    border-radius: .4rem;
+    z-index: 10;
+    transition: .4s;
+}
+
+.scrollup:hover{
+    background-color: #684E70;
+}
+
+.scrollup__icon{
+    font-size: 1.5rem;
+    color: #F5F5F5;
+}
+
+
+/* show scroll */
+.show-scroll{
+    bottom: 5rem;
+}
+
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+    background-color: #8f729e;
+    border-color: #8f729e;
+}
+.btn-secondary:hover{
+    background-color: #684E70;
+    border-color: #684E70;
+}
+
+
+.custom-control-input:focus~.custom-control-label::before {
+    border-color: #70587C !important;
+    box-shadow: none !important;
+}
+  
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #70587C !important;
+    background-color: #70587C !important;
+}
+  
+.custom-control-input:active~.custom-control-label::before {
+    background-color: #462A43 !important;
+    border-color: #70587C !important;
+}
+  
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #70587C !important;
+}
+  
+.custom-control-input-green:not(:disabled):active~.custom-control-label::before {
+    background-color: #70587C !important;
+    border-color: #70587C !important;
+}
