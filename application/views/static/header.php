@@ -40,13 +40,13 @@
         }
 
         .btn-primary{
-            background-color: #ca98c3;
-            border-color: #ca98c3;
+            background-color: #c289ba;
+            border-color: #c289ba;
         }
 
         .btn-primary:hover{
-            background-color: #3C2439;
-            border-color: #3C2439;
+            background-color: #8d4883;
+            border-color: #8d4883;
         }
 
         .btn-dark{
