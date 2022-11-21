@@ -17,11 +17,12 @@
         }
 
         .navbar-dark{
-            background-color: #d5adcf;
+            background-color: #ca98c3;
         }
 
         body{
-            color:black;
+            background-color: #f7f7f7;
+            color: black;
         }
 
         .bg-secondary{
@@ -39,8 +40,8 @@
         }
 
         .btn-primary{
-            background-color: #502F4C;
-            border-color: #502F4C;
+            background-color: #ca98c3;
+            border-color: #ca98c3;
         }
 
         .btn-primary:hover{
@@ -49,16 +50,22 @@
         }
 
         .btn-dark{
-            color: #281826 !important;
+            color: #ca98c3 !important;
         }
 
         .btn-dark:hover{
             color: #140C13 !important;
         }
+
+        .btn-secondary{
+            background-color: #f26a8e !important;
+            border-color: #f26a8e !important;
+        }
+
     </style>
 </head>
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top mb-5">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Pérolas Logo" style="width: 40px; margin-left: 15px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -66,10 +73,10 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto flex-nowrap navbar-right">
-                <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Produtos</a>
-                <a class="nav-item nav-link" href="#">Sobre Nós</a>
-                <a class="nav-item nav-link" href="#">Contato</a>
+                <a class="nav-item nav-link mr-2" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link mr-2" href="#">Produtos</a>
+                <a class="nav-item nav-link mr-2" href="#">Sobre Nós</a>
+                <a class="nav-item nav-link mr-2" href="#">Contato</a>
                 <!-- <div class="custom-control custom-switch d-flex align-items-center">
                     <input type="checkbox" class="custom-control-input" name="dark-mode" id="selector">
                     <label for="selector" class="custom-control-label text-white">Dark Mode</label>
@@ -78,9 +85,10 @@
         </div>
     </nav>
     <!-- <div>
-    <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
+        </form>
     </div> -->
 </header>
+<body>
