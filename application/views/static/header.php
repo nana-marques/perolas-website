@@ -15,14 +15,16 @@
         .text-white{
             color: #f3f3f3 !important;
         }
-
-        .navbar-dark{
-            background-color: #ca98c3;
+        /* #ca98c3 */
+        .navbar-light{
+            background: linear-gradient(#ca98c3, #d5adcf);
+            color: #000 !important;
         }
 
         body{
             background-color: #f7f7f7;
             color: black;
+
         }
 
         .bg-secondary{
@@ -31,7 +33,8 @@
         }
 
         .nav-link{
-            color: #f7f7f7 !important; 
+            color: #000 !important; 
+            font-weight: normal;
         }
 
         .show{
@@ -65,8 +68,8 @@
     </style>
 </head>
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Pérolas Logo" style="width: 40px; margin-left: 15px;"></a>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="assets/img/logoFundo.png" alt="Pérolas Logo" style="width: 55px; margin-left: 15px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
