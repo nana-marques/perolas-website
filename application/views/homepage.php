@@ -64,59 +64,61 @@
         </a>
     </div>
 
+    <div class="container mt-3">
+        <h1 class="d-flex justify-content-center">Serviços:</h1>
+        <div class="container marketing">
+            
+            <!-- Three columns of text below the carousel -->
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                    <h2>Bolos</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                    <h2>Doces</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                    <h2>Salgados</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+        </div>
+
+        <div class="container marketing">
+            <!-- Three columns of text below the carousel -->
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                    <h2>Kit Festa</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                    <h2>Datas Especiais</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                    <h2>Personalizar</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+        </div>
+    </div>
+
     
-
-    <div class="container marketing">
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row mt-5">
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2>Bolos</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2>Doces</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2>Salgados</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-    </div>
-
-    <div class="container marketing">
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row mt-5">
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2>Kit Festa</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2>Datas Especiais</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2>Personalizar</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-    </div>
     </main><!-- /.container -->  
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
