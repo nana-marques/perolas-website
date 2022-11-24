@@ -65,20 +65,7 @@
             border-color: #f26a8e !important;
         }
 
-            ::-webkit-scrollbar{
-        width: .60rem;
-        background-color: #b2b3b4;
-        border-radius: .5rem;
-    }
-
-    ::-webkit-scrollbar-thumb{
-        background-color: #c289ba;
-        border-radius: .5rem;
-    }
-
-    ::-webkit-scrollbar-thumb:hover{
-        background-color: #8d4883;
-    }
+        
     </style>
 </head>
 <header>

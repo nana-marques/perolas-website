@@ -111,3 +111,19 @@ body{
     background-color: #70587C !important;
     border-color: #70587C !important;
 }
+
+.box {
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid #666;
+    padding: 6px 0px;
+    background: #ccc;
+  }
+  
+  .box-content {
+    height: 200px;
+    width: 250px;
+    overflow: auto;
+    border-radius: 8px;
+  }

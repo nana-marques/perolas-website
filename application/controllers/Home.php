@@ -11,5 +11,10 @@ class Home extends CI_Controller {
 		$this->load->view('static/footer.php');
 	}
 
+
+	public function Contato()
+	{
+		$this->load->view('contato');
+	}
 	
 }
