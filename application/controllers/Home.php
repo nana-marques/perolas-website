@@ -8,6 +8,7 @@ class Home extends CI_Controller {
 		$this->load->helper('html');
 		$this->load->view('static/header.php');
 		$this->load->view('homepage');
+		$this->load->view('contato');
 		$this->load->view('static/footer.php');
 	}
 
