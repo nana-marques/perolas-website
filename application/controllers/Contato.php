@@ -1,31 +1,35 @@
 <?php
+
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 use application\models\Mcontato;
-class Home extends CI_Controller {
+
+class Contato extends CI_Controller {
+
+    public function __construct() 
+    {
+        parent::__construct();
+       
+        $this->load->library([
+            'encryption',
+            'table',
+            'form_validation',
+            'pagination',
+        ]);
+
+        $this->load->model('Mcontato');
+    }
 
     public function index()
 	{
-		$this->load->helper('html');
-		$this->load->helper('url');
-		$this->load->view('static/header.php');
-		$this->load->view('homepage');
-		//$this->load->view('contato');
-		$this->load->view('static/footer.php');
-	}
-
-	public function contato()
-	{
-		$this->load->helper('html');
-		$this->load->helper('url');
-
 		$this->load->view('static/header.php');
 		$this->load->view('contato');
 		$this->load->view('static/footer.php');
 	}
 
+
 	public function adicionar()
 	{
-		
 		$this->load->library('form_validation');
 		//$this->form_validation->set_rules();
 
@@ -69,27 +73,5 @@ class Home extends CI_Controller {
 
 		// var_dump($data);
 	}
-
-
-	public function card()
-	{
-		$this->load->helper('html');
-		$this->load->helper('url');
-		$this->load->model('Mbolos');
-
-		$this->load->view('static/header.php');
-		$this->load->view('cards');
-
-		$result = $this->Mbolos->select();        
-
-		$this->load->view('static/footer.php');
-	}
-
-	public function about()
-	{
-		$this->load->view('static/header.php');
-		$this->load->view('about');   
-
-		$this->load->view('static/footer.php');
-	}
+	
 }

@@ -6,7 +6,7 @@
     <?php echo link_tag('assets/css/custom.css', 'stylesheet'); ?>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <style>
         html:focus-within{
             scroll-behavior: smooth !important;
@@ -65,22 +65,22 @@
             border-color: #f26a8e !important;
         }
 
-        
+    
     </style>
 </head>
 <header>
     <nav class="navbar navbar-expand-md navbar-light fixed-top">
-        <a class="navbar-brand" href="#"><img src="assets/img/logoFundo.png" alt="Pérolas Logo" style="width: 55px; margin-left: 15px;"></a>
+        <a class="navbar-brand" href="homepage"><img src="assets/img/logoFundo.png" alt="Pérolas Logo" style="width: 55px; margin-left: 15px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto flex-nowrap navbar-right">
-                <a class="nav-item nav-link mr-2" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link mr-2" href="#">Produtos</a>
-                <a class="nav-item nav-link mr-2" href="#">Sobre Nós</a>
-                <a class="nav-item nav-link mr-2" href="#">Contato</a>
+                <a class="nav-item nav-link mr-2" href="homepage" style="color: #f7f7f7; font-weight: 500;">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link mr-2" href="#" style="color: #f7f7f7; font-weight: 500;">Produtos</a>
+                <a class="nav-item nav-link mr-2" href="about" style="color: #f7f7f7; font-weight: 500;">Sobre Nós</a>
+                <a class="nav-item nav-link mr-2" href="contatar" style="color: #f7f7f7; font-weight: 500;">Contato</a>
                 <!-- <div class="custom-control custom-switch d-flex align-items-center">
                     <input type="checkbox" class="custom-control-input" name="dark-mode" id="selector">
                     <label for="selector" class="custom-control-label text-white">Dark Mode</label>
@@ -95,4 +95,3 @@
         </form>
     </div> -->
 </header>
-<body>
