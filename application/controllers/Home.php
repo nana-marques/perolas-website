@@ -70,21 +70,6 @@ class Home extends CI_Controller {
 		// var_dump($data);
 	}
 
-
-	public function card()
-	{
-		$this->load->helper('html');
-		$this->load->helper('url');
-		$this->load->model('Mbolos');
-
-		$this->load->view('static/header.php');
-		$this->load->view('cards');
-
-		$result = $this->Mbolos->select();        
-
-		$this->load->view('static/footer.php');
-	}
-
 	public function about()
 	{
 		$this->load->view('static/header.php');
