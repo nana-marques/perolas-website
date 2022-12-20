@@ -63,6 +63,8 @@ $route['homepage/contato/enviar'] = 'Contato/adicionar';
 
 $route['about'] = 'Home/about';
 
+//$route['produtos'] = 'Home/produtos';
+
 $route['cards_bolos'] = 'Cards/cards_bolos';
 $route['cards_doces'] = 'Cards/cards_doces';
 $route['cards_salgados'] = 'Cards/cards_salgados';
