@@ -73,8 +73,7 @@ class Home extends CI_Controller {
 	public function about()
 	{
 		$this->load->view('static/header.php');
-		$this->load->view('about');   
-
+		$this->load->view('about');
 		$this->load->view('static/footer.php');
 	}
 }

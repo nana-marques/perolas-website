@@ -78,7 +78,7 @@
 </head>
 <header>
     <nav class="navbar navbar-expand-md navbar-light fixed-top">
-        <a class="navbar-brand" href="homepage"><img src="assets/img/logoFundo.png" alt="Pérolas Logo" style="width: 55px; margin-left: 15px;"></a>
+        <a class="navbar-brand" href="<?= $this->uri->segment(1);?>"><img src="assets/img/logoFundo.png" alt="Pérolas Logo" style="width: 55px; margin-left: 15px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
