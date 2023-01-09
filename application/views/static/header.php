@@ -86,7 +86,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto flex-nowrap navbar-right">
                 <a class="nav-item nav-link mr-2" href="homepage" style="color: #f7f7f7; font-weight: 500;">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link mr-2" href="produtos" style="color: #f7f7f7; font-weight: 500;">Produtos</a>
+                <a class="nav-item nav-link mr-2" href="#produtos" style="color: #f7f7f7; font-weight: 500;">Produtos</a>
                 <a class="nav-item nav-link mr-2" href="about" style="color: #f7f7f7; font-weight: 500;">Sobre Nós</a>
                 <a class="nav-item nav-link mr-2" href="contatar" style="color: #f7f7f7; font-weight: 500;">Contato</a>
                 <!-- <div class="custom-control custom-switch d-flex align-items-center">
