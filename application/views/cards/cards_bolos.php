@@ -1,8 +1,25 @@
-<body style="margin-top: 6vw;">
+<body style="margin-top: 10em;">
     
 <div class="mt-5">
     <main role="main">
         <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="container d-flex justify-content-center ">
+                    <h3 style="margin-top: 3vw;">Selecione uma categoria:</h3>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <select name="bolos" id="bolos" class="custom-select ml-3" style="width: 100%; margin-top: 3vw;">
+                        <option selected>Todos</option>
+                        <?php $result = $this->Mbolos->tipos();  
+                        foreach ($result as $value) { ?>
+                            <option value=""><?= $value->tipo ?></option>
+                            <?php } ?>
+                        </select>
+                        <button class="btn btn-primary btn-lg rounded-right" type="button" style="margin-top: 3vw;">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="row mt-5">
                 <div class="container marketing">
                 <h1 style="margin-top: 4vw;">Nossos Bolos:</h1>

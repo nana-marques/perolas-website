@@ -73,12 +73,11 @@
             border-color: #f26a8e !important;
         }
 
-    
     </style>
 </head>
 <header>
     <nav class="navbar navbar-expand-md navbar-light fixed-top">
-        <a class="navbar-brand" href="<?= $this->uri->segment(1);?>"><img src="assets/img/logoFundo.png" alt="Pérolas Logo" style="width: 55px; margin-left: 15px;"></a>
+        <a class="navbar-brand" href="http://localhost/Ana/perolas-website/homepage"><img src="assets/img/logoVerdeTransparente.png" alt="Pérolas Logo" style="width: 55px; margin-left: 15px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -86,7 +85,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto flex-nowrap navbar-right">
                 <a class="nav-item nav-link mr-2" href="homepage" style="color: #f7f7f7; font-weight: 500;">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link mr-2" href="#produtos" style="color: #f7f7f7; font-weight: 500;">Produtos</a>
+                <a class="nav-item nav-link mr-2" href="produtos" style="color: #f7f7f7; font-weight: 500;">Produtos</a>
                 <a class="nav-item nav-link mr-2" href="about" style="color: #f7f7f7; font-weight: 500;">Sobre Nós</a>
                 <a class="nav-item nav-link mr-2" href="contatar" style="color: #f7f7f7; font-weight: 500;">Contato</a>
                 <!-- <div class="custom-control custom-switch d-flex align-items-center">

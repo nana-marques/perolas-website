@@ -59,7 +59,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['homepage'] = 'Home/index';
 
 $route['contatar'] = 'Contato/index';
-$route['homepage/contato/enviar'] = 'Contato/adicionar';
+$route['contato/enviar'] = 'Contato/adicionar';
 
 $route['about'] = 'Home/about';
 

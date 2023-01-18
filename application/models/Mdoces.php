@@ -33,4 +33,20 @@ class Mdoces extends CI_Model{
         
         return $retorno->result();
     }
+
+    
+    public function tipos($where = []) {
+
+        if ($where) {
+            foreach ($where as $key => $value) {
+                $this->db->where($key, $value);
+            }
+        }
+
+        $this->db->select('doces.tipo')->distinct();
+        
+        $retorno = $this->db->get(Mdoces::TABLE_NAME);
+        
+        return $retorno->result();
+    }
 }

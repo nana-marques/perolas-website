@@ -63,13 +63,13 @@ class Contato extends CI_Controller {
 
 			$this->load->model('Mcontato');
 			$this->Mcontato->adicionar($data);
-			//echo "hi";exit;
+			echo "hi";exit;
 			return redirect()->to('homepage');
 			
 			//redirect()->("homepage/contato/enviar");
 		} 
 		else {
-			redirect ("homepage/contato/enviar");
+			redirect ("/");
 		}
 
 		// var_dump($data);
