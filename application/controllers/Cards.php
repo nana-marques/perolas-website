@@ -16,9 +16,6 @@ class Cards extends CI_Controller {
 
 		$this->load->view('static/header.php');
 		$this->load->view('cards/cards_bolos.php');
-
-		$result = $this->Mbolos->select();        
-
 		$this->load->view('static/footer.php');
 	}
 

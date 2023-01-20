@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-    <link rel="icon" href="assets/img/favicon.png" sizes="32x32"/> 
+    <link rel="icon" href="assets/img/favicon.png" sizes="35x35"/> 
     <title>Pérolas Website</title>
     <style>
         html:focus-within{
@@ -25,7 +25,7 @@
         }
         /* #ca98c3 */
         .navbar-light{
-            background: linear-gradient(#ca98c3, #d5adcf);
+            background-color: #F4AFBD;
             color: #000 !important;
         }
 
@@ -41,7 +41,7 @@
         }
 
         .nav-link{
-            color: #000 !important; 
+            color: #fff !important; 
             font-weight: normal;
         }
 
@@ -51,17 +51,17 @@
         }
 
         .btn-primary{
-            background-color: #c289ba;
-            border-color: #c289ba;
+            background-color: #F4AFBD;
+            border-color: #F4AFBD;
         }
 
         .btn-primary:hover{
-            background-color: #8d4883;
-            border-color: #8d4883;
+            background-color: #E55175;
+            border-color: #E55175;
         }
 
         .btn-dark{
-            color: #ca98c3 !important;
+            color: #E55175 !important;
         }
 
         .btn-dark:hover{
@@ -69,15 +69,20 @@
         }
 
         .btn-secondary{
-            background-color: #f26a8e !important;
-            border-color: #f26a8e !important;
+            background-color: #f39cbc !important;
+            border-color: #f39cbc !important;
+        }
+
+        footer a{
+            color: #E55175;
+            text-decoration: none;
         }
 
     </style>
 </head>
 <header>
     <nav class="navbar navbar-expand-md navbar-light fixed-top">
-        <a class="navbar-brand" href="http://localhost/Ana/perolas-website/homepage"><img src="assets/img/logoVerdeTransparente.png" alt="Pérolas Logo" style="width: 55px; margin-left: 15px;"></a>
+        <a class="navbar-brand" href="http://localhost/Ana/perolas-website/homepage"><img src="assets/img/logo-softZoom.png" alt="Pérolas Logo" style="width: 4vw; margin-left: 10px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

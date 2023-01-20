@@ -33,7 +33,7 @@
                                     <h5 class="card-title"><?= $value->nome?></h5>
                                     <p class="card-text"><small><?= $value->tipo ?></small></p>
                                     <p class="card-text"><?= $value->descricao ?></p>
-                                    <a href="#" class="btn btn-primary d-flex justify-content-center">Go somewhere</a>
+                                    <a href="#" class="btn btn-primary d-flex justify-content-center">Detalhes:</a>
                                 </div>
                             </div>
                         </div>
