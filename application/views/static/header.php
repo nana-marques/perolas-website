@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-    <!-- <link rel="icon" href="assets/img/favicon.png" sizes="35x35"/>  -->
+    <link rel="icon" href="assets/img/favicon.png" sizes="48x48"/> 
     <title>Pérolas Website</title>
     <style>
         html:focus-within{
@@ -91,7 +91,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto flex-nowrap navbar-right">
                 <a class="nav-item nav-link mr-2" href="homepage" style="color: #f7f7f7; font-weight: 500;">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link mr-2" href="produtos" style="color: #f7f7f7; font-weight: 500;">Produtos</a>
+                <a class="nav-item nav-link mr-2" href="http://localhost/Ana/perolas-website/homepage#produtos" style="color: #f7f7f7; font-weight: 500;">Produtos</a>
                 <a class="nav-item nav-link mr-2" href="about" style="color: #f7f7f7; font-weight: 500;">Sobre Nós</a>
                 <a class="nav-item nav-link mr-2" href="contatar" style="color: #f7f7f7; font-weight: 500;">Contato</a>
                 <!-- <div class="custom-control custom-switch d-flex align-items-center">

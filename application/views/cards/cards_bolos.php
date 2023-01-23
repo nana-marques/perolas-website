@@ -24,7 +24,8 @@
                 <div class="container marketing">
                 <h1 style="margin-top: 4vw;">Nossos Bolos:</h1>
                     <div class="row mt-5">
-                        <?php $result = $this->Mbolos->select();  
+                        <?php $result = $this->Mbolos->select();
+                          
                         foreach ($result as $row=>$value) { ?>
                         <div class="col-lg-3">
                             <div class="card" style="width: 17rem; margin-top: 1vw;">
@@ -44,5 +45,13 @@
         </div>
     </main>
 </div>
+
+<!-- <script>
+    $(document).ready(function(){
+        $('select[name="tipo"]').on('change', function() {
+
+        })
+    })
+</script> -->
 
 </body>

@@ -11,7 +11,8 @@
             </p>
         </div>
         <div class="col col-lg-2 float-right mt-3">
-            <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect width="100%" height="100%" fill="#777"/></svg>           
+            <!-- <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect width="100%" height="100%" fill="#777"/></svg>            -->
+            <img src="assets/img/favicon.png" alt="Logotipo da Empresa" width="240" height="240">
         </div>
         <div class="col col-14 float-left mt-3">
             <p>
