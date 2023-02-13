@@ -14,14 +14,19 @@ class Salgados extends CI_Controller {
 		
     }
 
-    public function cards()
+    public function cards_salgados()
 	{
 		$this->load->helper('html');
 		$this->load->helper('url');
 		$this->load->model('Msalgados');
 
 		$this->load->view('static/header.php');
-		$this->load->view('cards/cards_salgados.php');
+
+		//$result2 = $this->Msalgados->tipos();
+		$data['result'] = $this->Msalgados->select();
+
+		$this->load->view('cards/cards_salgados.php', $data);
+
 		$this->load->view('static/footer.php');
 	}
 }

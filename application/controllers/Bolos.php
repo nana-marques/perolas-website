@@ -12,14 +12,19 @@ class Bolos extends CI_Controller {
 
     }
 
-    public function cards()
+    public function cards_bolos()
 	{
 		$this->load->helper('html');
 		$this->load->helper('url');
 		$this->load->model('Mbolos');
 
 		$this->load->view('static/header.php');
-		$this->load->view('cards/cards_bolos.php');
+
+		//$result2 = $this->Mbolos->tipos();
+		$data['result'] = $this->Mbolos->select();
+
+		$this->load->view('cards/cards_bolos.php', $data);
+
 		$this->load->view('static/footer.php');
 	}
 }

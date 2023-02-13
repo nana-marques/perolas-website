@@ -12,14 +12,15 @@ class Doces extends CI_Controller {
 		
     }
 
-    public function cards()
+    public function cards_doces()
 	{
 		$this->load->helper('html');
 		$this->load->helper('url');
 		$this->load->model('Mdoces');
 
 		$this->load->view('static/header.php');
-		$this->load->view('cards/cards_doces.php');
+		$data['result'] = $this->Mdoces->select();
+		$this->load->view('cards/cards_doces.php', $data);
 		$this->load->view('static/footer.php');
 	}
 }

@@ -65,6 +65,9 @@ $route['about'] = 'Home/about';
 
 //$route['produtos'] = 'Home/produtos';
 
-$route['cards_bolos'] = 'bolos/cards';
-$route['cards_doces'] = 'Cards/cards_doces';
-$route['cards_salgados'] = 'Cards/cards_salgados';
+$route['cards_bolos'] = 'Bolos/cards_bolos';
+$route['cards_doces'] = 'Doces/cards_doces';
+$route['cards_salgados'] = 'Salgados/cards_salgados';
+$route['cards_especiais'] = 'Especiais/cards_especiais';
+
+$route['cards/filtrar'] = 'Cards/filtrar';
