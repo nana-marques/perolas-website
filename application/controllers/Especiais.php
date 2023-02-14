@@ -19,7 +19,7 @@ class Especiais extends CI_Controller {
 
 		$this->load->view('static/header.php');
 
-		//$result2 = $this->Mespeciais->tipos();
+		$data['result2'] = $this->Mespeciais->tipos();
 		$data['result'] = $this->Mespeciais->select();
 
 		$this->load->view('cards/cards_especiais.php', $data);

@@ -6,26 +6,26 @@
             <div class="row mt-5">
                 <div class="container d-flex justify-content-center ">
                     <h3 style="margin-top: 3vw;">Selecione uma categoria:</h3>
-                    <div class="d-flex justify-content-center align-items-center">
+                    <form action="<?= base_url('Doces/filtrar') ?>" class="d-flex justify-content-center align-items-center" method="POST">
                         <select name="doces" id="doces" class="custom-select ml-3" style="width: 100%; margin-top: 3vw;">
-                        <option selected>Todos</option>
-                        <?php $result = $this->Mdoces->tipos();  
-                        foreach ($result as $value) { ?>
-                            <option value=""><?= $value->tipo ?></option>
+                            <option value="todos">Todos</option>
+                            <?php 
+                            foreach ($result2 as $value) { ?>
+                                <option value="<?= $value->tipo ?>"><?= $value->tipo ?></option>
                             <?php } ?>
                         </select>
-                        <button class="btn btn-primary btn-lg rounded-right" type="button" style="margin-top: 3vw;">
+                        <button class="btn btn-primary btn-lg rounded-right" type="submit" style="margin-top: 3vw;">
                             <i class="fas fa-search"></i>
                         </button>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="container marketing">
                 <h1 style="margin-top: 4vw;">Nossos Doces:</h1>
                     <div class="row mt-5">
-                        <?php $result = $this->Mdoces->select();  
-                        foreach ($result as $row=>$value) { ?>
+                        <?php   
+                        foreach ($result as $value) { ?>
                         <div class="col-lg-3">
                             <div class="card" style="width: 17rem; margin-top: 1vw;">
                             <svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><rect width="100%" height="100%" fill="#777"/></svg>

@@ -7,9 +7,9 @@ use application\models\Mbolos;
 use application\models\Mdoces;
 
 class Bolos extends CI_Controller {
-    public function filtro()
+    public function filtrar()
     {
-
+		
     }
 
     public function cards_bolos()
@@ -20,7 +20,7 @@ class Bolos extends CI_Controller {
 
 		$this->load->view('static/header.php');
 
-		//$result2 = $this->Mbolos->tipos();
+		$data['result2'] = $this->Mbolos->tipos();
 		$data['result'] = $this->Mbolos->select();
 
 		$this->load->view('cards/cards_bolos.php', $data);

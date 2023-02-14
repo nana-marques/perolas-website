@@ -6,7 +6,7 @@
             <div class="row mt-5">
                 <div class="container d-flex justify-content-center ">
                     <h3 style="margin-top: 3vw;">Selecione uma categoria:</h3>
-                    <form action="<?= base_url('cards/filtrar') ?>" class="d-flex justify-content-center align-items-center" method="POST">
+                    <form action="<?= base_url('Bolos/filtrar') ?>" class="d-flex justify-content-center align-items-center" method="POST">
                         <select name="bolos" id="bolos" class="custom-select ml-3" style="width: 100%; margin-top: 3vw;">
                             <option value="todos">Todos</option>
                             <?php 
@@ -31,7 +31,7 @@
                             <svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><rect width="100%" height="100%" fill="#777"/></svg>
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $row->nome?></h5>
-                                    <p class="card-text"><small><?= $row->tipo ?></small></p>
+                                    <p class="card-text"><small><?= $row->tipo ?></small></p> 
                                     <p class="card-text"><?= $row->descricao ?></p>
                                     <a href="#" class="btn btn-primary d-flex justify-content-center">Detalhes:</a>
                                 </div>

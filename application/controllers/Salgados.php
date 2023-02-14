@@ -22,7 +22,7 @@ class Salgados extends CI_Controller {
 
 		$this->load->view('static/header.php');
 
-		//$result2 = $this->Msalgados->tipos();
+		$data['result2'] = $this->Msalgados->tipos();
 		$data['result'] = $this->Msalgados->select();
 
 		$this->load->view('cards/cards_salgados.php', $data);
