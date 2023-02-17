@@ -1,5 +1,5 @@
-<div class="row justify-content-center" style="max-width: 100%; margin-top: 5vw;">
-    <div class="col-lg-5 mt-5 bg-light" style="width: 40vw;">
+<div class="row justify-content-center" style="max-width: 100%; margin-top: 4em;">
+    <div class="col-lg-5 mt-5 bg-light" style="width: 40em;">
         <h1 class="text-center font-weight-bold" style="color: #502F4C;">Sobre Nós</h1>
         <div class="col col-8 float-left mt-3">
             <p>
@@ -10,7 +10,7 @@
                 Nullam lobortis volutpat libero nec tincidunt.
             </p>
         </div>
-        <div class="col col-lg-2 float-right mt-3">
+        <div class="col col-lg-4 float-right mt-3">
             <!-- <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect width="100%" height="100%" fill="#777"/></svg>            -->
             <img src="assets/img/favicon.png" alt="Logotipo da Empresa" width="240" height="240">
         </div>

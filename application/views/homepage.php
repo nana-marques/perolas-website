@@ -1,5 +1,5 @@
 <body>
-<div class="mt-5">
+<div>
     <main role="main">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -10,47 +10,47 @@
                 <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
-            <div class="carousel-item active">
-                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
-                <img src="assets/img/boloChocolate.jpg" alt="" width="100%" height="100%" style="filter: brightness(0.5); max-width: 100%; height: auto;">
-                <div class="container">
-                    <div class="carousel-caption text-right">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                <div class="carousel-item active">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
+                    <img src="assets/img/boloChocolate.jpg" alt="" width="100%" style="filter: brightness(0.5); max-width: 100%; height: auto;">
+                    <div class="container">
+                        <div class="carousel-caption text-right mt-5">
+                            <h2>One more.</h2>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/boloRosa.jpg" alt="" width="100%" height="100%" style="filter: brightness(0.5); max-width: 100%; height: auto;">
-                <div class="container">
-                    <div class="carousel-caption text-left">
-                        <h1>Example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <div class="carousel-item">
+                    <img src="assets/img/boloRosa.jpg" alt="" width="100%" style="filter: brightness(0.5); max-width: 100%; height: auto;">
+                    <div class="container">
+                        <div class="carousel-caption text-left mt-5">
+                            <h2>Example headline.</h2>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/bolo1.png" alt="" width="100%" height="100%" style="filter: brightness(0.5); max-width: 100%; height: auto; ">
-                <div class="container">
-                    <div class="carousel-caption text-right">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                <div class="carousel-item">
+                    <img src="assets/img/boloChocolate.jpg" alt="" width="100%" height="100%" style="filter: brightness(0.5); max-width: 100%; height: auto; ">
+                    <div class="container">
+                        <div class="carousel-caption text-right mt-5">
+                            <h2>One more.</h2>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/bolo2.jpg" alt="" width="100%" height="100%" style="filter: brightness(0.5); max-width: 100%; height: auto;">
-                <div class="container">
-                    <div class="carousel-caption text-left">
-                        <h1>Example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <div class="carousel-item">
+                    <img src="assets/img/boloRosa.jpg" alt="" width="100%" height="100%" style="filter: brightness(0.5); max-width: 100%; height: auto;">
+                    <div class="container">
+                        <div class="carousel-caption text-left mt-5">
+                            <h2>Example headline.</h2>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,7 +83,8 @@
                         <p><a class="btn btn-primary" href="cards_doces" role="button">Detalhes &raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                        <!-- <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+                        <img src="assets/img/coxinha.png" alt="" width="240" height="240" class="rounded-circle">
                         <h2>Salgados</h2>
                         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
                         <p><a class="btn btn-primary" href="cards_salgados" role="button">Detalhes &raquo;</a></p>
@@ -96,19 +97,22 @@
                 
                 <div class="row mt-5">
                     <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                        <!-- <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+                        <img src="assets/img/balao.jpg" alt="" width="240" height="240" class="rounded-circle">
                         <h2>Kit Festa</h2>
                         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
                         <p><a class="btn btn-primary" href="#" role="button">Detalhes &raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                        <!-- <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+                        <img src="assets/img/panetone2.jpg" alt="" width="240" height="240" class="rounded-circle">
                         <h2>Datas Especiais</h2>
                         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                         <p><a class="btn btn-primary" href="#" role="button">Detalhes &raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                        <!-- <svg class="bd-placeholder-img rounded-circle" width="240" height="240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+                        <img src="assets/img/bolo-morango.png" alt="" width="240" height="240" class="rounded-circle">
                         <h2>Personalizar</h2>
                         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
                         <p><a class="btn btn-primary" href="#" role="button">Detalhes &raquo;</a></p>
@@ -121,8 +125,6 @@
     
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+    
 </div> 
 </body>
