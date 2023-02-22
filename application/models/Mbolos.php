@@ -36,15 +36,25 @@ class Mbolos extends CI_Model{
         return $retorno->result();
     }
 
-    public function tipos($where = []) {
+    public function tipos() {
 
-        if ($where) {
-            foreach ($where as $key => $value) {
-                $this->db->where($key, $value);
-            }
-        }
+        // if ($where) {
+        //     foreach ($where as $key => $value) {
+        //         $this->db->where($key, $value);
+        //     }
+        // }
 
         $this->db->select('bolos.tipo')->distinct();
+        
+        $retorno = $this->db->get(Mbolos::TABLE_NAME);
+        
+        return $retorno->result();
+    }
+
+    public function where($where = []) {
+
+        $this->db->select('bolos.tipo');
+        $this->db->where('bolos.tipo', $where);
         
         $retorno = $this->db->get(Mbolos::TABLE_NAME);
         
