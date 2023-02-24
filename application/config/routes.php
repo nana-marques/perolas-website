@@ -70,4 +70,7 @@ $route['cards_doces'] = 'Doces/cards_doces';
 $route['cards_salgados'] = 'Salgados/cards_salgados';
 $route['cards_especiais'] = 'Especiais/cards_especiais';
 
-$route['cards/filtrar'] = 'Cards/filtrar';
+
+//$route['cards_bolos/filtrar']['post'] = 'Bolos/filtrar';
+$route['cards_bolos/filtrar'] = 'Bolos/filtrar';
+//$route['cards_bolos/filtrar/(:any)'] ='Bolos/filtrar';

@@ -11,19 +11,38 @@ class Bolos extends CI_Controller {
     {
 		//colocar como if na view, 3 ifs e um else
 		
-		if($this->input->post("bolos")){
+		$this->load->model('Mbolos');
+		$resultado = $this->Mbolos->select();
 
-			$this->load->model('Mbolos');
-	
+		if(($this->input->post("bolos")) !== "Todos"){
+
 			$select =  $this->input->post("bolos");
-			$resultado = $this->Mbolos->where($select);
 	
-			$data = $resultado[0];
-			//var_dump($result);die;
-	
-			$this->load->view('cards/cards_bolos.php', $data);
-			//return ($result);
+			//$result['resultado'] = $resultado;
+			
+			
+			echo $this->input->post("bolos");
+
+			//$resultado = json_decode( json_encode($resultado), true);
+			
+			//$resultado = $this->Mbolos->select();
+
+			foreach($resultado as $row){
+				echo $row->tipo;
+			}
+			var_dump($resultado);die;
+
+			if(($resultado) === $select) {
+				echo $resultado[2];
+				var_dump($resultado);die;
+				//return $this->load->view('cards/cards_bolos.php', $resultado);
+			}
+			
+			
+			
 		}
+		//var_dump($resultado);die;
+		
     }
 
     public function cards_bolos()

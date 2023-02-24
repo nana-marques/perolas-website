@@ -9,20 +9,20 @@ class Mbolos extends CI_Model{
 
     const TABLE_NAME = 'bolos';
 
-    public function selectttt($data) {
+    // public function selectttt($data) {
 
-        $query = $this->$db->table('bolos')->get();
-        return ($query);
+    //     $query = $this->$db->table('bolos')->get();
+    //     return ($query);
  
-    }
+    // }
 
     public function select($where = [], $limit = 100, $off_set = 0, $sortBy=null, $order=null) {
 
-        if ($where) {
-            foreach ($where as $key => $value) {
-                $this->db->where($key, $value);
-            }
-        }
+        // if ($where) {
+        //     foreach ($where as $key => $value) {
+        //         $this->db->where($key, $value);
+        //     }
+        // }
 
         $this->db->select('bolos.nome,
                             bolos.tipo,
@@ -59,5 +59,15 @@ class Mbolos extends CI_Model{
         $retorno = $this->db->get(Mbolos::TABLE_NAME);
         
         return $retorno->result();
+    }
+
+    public function filter() {
+
+        $retorno = $this->db->select('bolos');
+        $retorno .= $this->db->where('bolos.tipo', $where);
+        
+        // $retorno = $this->db->get(Mbolos::TABLE_NAME);
+        
+        return $retorno;
     }
 }
