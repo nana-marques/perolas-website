@@ -37,15 +37,19 @@ class Msalgados extends CI_Model{
     }
 
     
-    public function tipos($where = []) {
-
-        if ($where) {
-            foreach ($where as $key => $value) {
-                $this->db->where($key, $value);
-            }
-        }
+    public function tipos() {
 
         $this->db->select('salgados.tipo')->distinct();
+        
+        $retorno = $this->db->get(Msalgados::TABLE_NAME);
+        
+        return $retorno->result();
+    }
+
+    public function where($where = []) {
+
+        //$this->db->select('salgados.tipo');
+        $this->db->where('salgados.tipo', $where);
         
         $retorno = $this->db->get(Msalgados::TABLE_NAME);
         

@@ -33,4 +33,23 @@ class Mespeciais extends CI_Model{
         
         return $retorno->result();
     }
+
+    public function tipos() {
+
+        $this->db->select('especiais.tipo')->distinct();
+        
+        $retorno = $this->db->get(Mespeciais::TABLE_NAME);
+        
+        return $retorno->result();
+    }
+
+    public function where($where = []) {
+
+        //$this->db->select('especiais.tipo');
+        $this->db->where('especiais.tipo', $where);
+        
+        $retorno = $this->db->get(Mespeciais::TABLE_NAME);
+        
+        return $retorno->result();
+    }
 }

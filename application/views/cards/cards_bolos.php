@@ -6,8 +6,7 @@
             <div class="row mt-5">
                 <div class="container d-flex justify-content-center ">
                     <h3 style="margin-top: 3vw;">Selecione uma categoria:</h3>
-                    <form action="<?= base_url('cards_bolos/filtrar')?>" class="d-flex justify-content-center align-items-center" method="POST">
-                    <?php  //var_dump($result2);die; ?>    
+                    <form action="<?= base_url('cards_bolos/filtrar')?>" class="d-flex justify-content-center align-items-center" method="POST"> 
                         <select name="bolos" id="bolos" class="custom-select ml-3" style="width: 100%; margin-top: 3vw;">
                             <option value="todos">Todos</option>
                             <?php 
