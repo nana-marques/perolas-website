@@ -19,7 +19,7 @@
         //echo meta('description', '');
         //teste
         ?>
-    <link rel="icon" href="assets/img/favicon.png" sizes="48x48"/> 
+    <link rel="icon" href="<?= base_url('assets/img/favicon.png')?>" sizes="48x48"/> 
     <style>
         html:focus-within{
             scroll-behavior: smooth !important;
@@ -91,7 +91,7 @@
 </head>
 <div>    
     <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="http://localhost/Ana/perolas-website/homepage"><img src="assets/img/logo-softZoom.png" alt="Pérolas Logo" style="width: 3em; margin-left: 10px;"></a>
+        <a class="navbar-brand" href="http://localhost/Ana/perolas-website/homepage"><img src="<?= base_url('assets/img/logo-softZoom.png') ?>" alt="Pérolas Logo" style="width: 3em; margin-left: 10px;"></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -99,16 +99,16 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style>
             <ul class="navbar-nav navbar-right ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link mr-2" href="homepage" style="color: #f7f7f7; font-weight: 500;">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link mr-2" href="<?= base_url('homepage') ?>" style="color: #f7f7f7; font-weight: 500;">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mr-2" href="http://localhost/Ana/perolas-website/homepage#produtos" style="color: #f7f7f7; font-weight: 500;">Produtos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-2" href="about" style="color: #f7f7f7; font-weight: 500;">Sobre Nós</a>
+                    <a class="nav-link mr-2" href="<?= base_url('about') ?>" style="color: #f7f7f7; font-weight: 500;">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-2" href="contatar" style="color: #f7f7f7; font-weight: 500;">Contato</a>
+                    <a class="nav-link mr-2" href="<?= base_url('contatar') ?>" style="color: #f7f7f7; font-weight: 500;">Contato</a>
                 </li>
                 <!-- <ul class="custom-control custom-switch d-flex align-items-center">
                     <input type="checkbox" class="custom-control-input" name="dark-mode" id="selector">

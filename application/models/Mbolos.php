@@ -18,11 +18,11 @@ class Mbolos extends CI_Model{
 
     public function select($where = [], $limit = 100, $off_set = 0, $sortBy=null, $order=null) {
 
-        // if ($where) {
-        //     foreach ($where as $key => $value) {
-        //         $this->db->where($key, $value);
-        //     }
-        // }
+        if ($where) {
+            foreach ($where as $key => $value) {
+                $this->db->where($key, $value);
+            }
+        }
 
         $this->db->select('bolos.nome,
                             bolos.tipo,
@@ -30,19 +30,15 @@ class Mbolos extends CI_Model{
 
         
         $this->db->order_by($sortBy, $order);
-        $this->db->limit($limit, $off_set);        
+        $this->db->limit($limit, $off_set);
+        $this->db->where($where);
+
         $retorno = $this->db->get(Mbolos::TABLE_NAME);
         
         return $retorno->result();
     }
 
     public function tipos() {
-
-        // if ($where) {
-        //     foreach ($where as $key => $value) {
-        //         $this->db->where($key, $value);
-        //     }
-        // }
 
         $this->db->select('bolos.tipo')->distinct();
         
@@ -53,7 +49,7 @@ class Mbolos extends CI_Model{
 
     public function where($where = []) {
 
-        $this->db->select('bolos.tipo');
+        //$this->db->select('bolos.tipo');
         $this->db->where('bolos.tipo', $where);
         
         $retorno = $this->db->get(Mbolos::TABLE_NAME);
@@ -61,13 +57,4 @@ class Mbolos extends CI_Model{
         return $retorno->result();
     }
 
-    public function filter() {
-
-        $retorno = $this->db->select('bolos');
-        $retorno .= $this->db->where('bolos.tipo', $where);
-        
-        // $retorno = $this->db->get(Mbolos::TABLE_NAME);
-        
-        return $retorno;
-    }
 }

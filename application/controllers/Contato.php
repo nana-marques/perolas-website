@@ -69,7 +69,7 @@ class Contato extends CI_Controller {
 			//redirect()->("homepage/contato/enviar");
 		} 
 		else {
-			redirect ("/");
+			redirect()->to('homepage');
 		}
 
 		// var_dump($data);

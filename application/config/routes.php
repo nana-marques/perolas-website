@@ -57,10 +57,8 @@ $route['translate_uri_dashes'] = FALSE;
 // routing do site
 
 $route['homepage'] = 'Home/index';
-
 $route['contatar'] = 'Contato/index';
 $route['contato/enviar'] = 'Contato/adicionar';
-
 $route['about'] = 'Home/about';
 
 //$route['produtos'] = 'Home/produtos';
@@ -70,7 +68,5 @@ $route['cards_doces'] = 'Doces/cards_doces';
 $route['cards_salgados'] = 'Salgados/cards_salgados';
 $route['cards_especiais'] = 'Especiais/cards_especiais';
 
-
-//$route['cards_bolos/filtrar']['post'] = 'Bolos/filtrar';
 $route['cards_bolos/filtrar'] = 'Bolos/filtrar';
-//$route['cards_bolos/filtrar/(:any)'] ='Bolos/filtrar';
+
