@@ -28,9 +28,19 @@ class Bolos extends CI_Controller {
 		
 
 		$select =  $this->input->post("bolos");
-		
-		$data['result'] = $this->Mbolos->where($select);
-		$data['result2'] = $this->Mbolos->tipos();
+
+		// var_dump($select);die;
+		if($this->input->post("bolos") == "Todos"){
+			$data['result2'] = $this->Mbolos->tipos();
+			$data['result'] = $this->Mbolos->select();
+			return $this->load->view('cards/cards_bolos.php', $data);
+
+		}
+		else {
+
+			$data['result'] = $this->Mbolos->where($select);
+			$data['result2'] = $this->Mbolos->tipos();
+		}
 		
 		// $url = $this->uri->segment(0);
 		

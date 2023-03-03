@@ -8,10 +8,10 @@
                     <h3 style="margin-top: 3vw;">Selecione uma categoria:</h3>
                     <form action="<?= base_url('cards_bolos/filtrar')?>" class="d-flex justify-content-center align-items-center" method="POST"> 
                         <select name="bolos" id="bolos" class="custom-select ml-3" style="width: 100%; margin-top: 3vw;">
-                            <option value="todos">Todos</option>
+                            <option value="Todos" selected >Todos</option>
                             <?php 
                             foreach ($result2 as $value) { ?>
-                                <option value="<?= $value->tipo ?>"><?= $value->tipo ?></option>
+                                <option <?php  //if(($value->tipo)){ echo 'selected'; }?>  value="<?= $value->tipo ?>"><?= $value->tipo ?></option>
                             <?php } ?>
                         </select>
                         <button class="btn btn-primary btn-lg rounded-right" type="submit" style="margin-top: 3vw;">
