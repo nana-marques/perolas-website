@@ -3,6 +3,7 @@
     <div class="col-md-5 mt-5 bg-light rounded">
         <h1 class="text-center font-weight-bold" style="color: #502F4C;">Contato</h1>
         <hr class="bg-light">
+        <h6 class="text-center text-muted mb-2 ">Deixe seu Feedback ou Sugestão!</h6>
         <h5 class="text-center text-success"></h5>
         <?php echo form_open('contato/enviar', 'class="p-2" id="contato"') ?>
             <div class="form-group input-group">
