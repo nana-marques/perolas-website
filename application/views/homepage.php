@@ -115,7 +115,7 @@
                         <img src="assets/img/bolo-morango.png" alt="" width="240" height="240" class="rounded-circle">
                         <h2>Personalizar</h2>
                         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                        <p><a class="btn btn-primary" href="#" role="button">Detalhes &raquo;</a></p>
+                        <p><a class="btn btn-primary" href="personalizar" role="button">Detalhes &raquo;</a></p>
                     </div>
                 </div>
 

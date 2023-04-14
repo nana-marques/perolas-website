@@ -24,7 +24,8 @@ class Msalgados extends CI_Model{
             }
         }
 
-        $this->db->select('salgados.nome,
+        $this->db->select(' salgados.id,
+                            salgados.nome,
                             salgados.tipo,
                             salgados.descricao');
 

@@ -11,6 +11,7 @@ class Home extends CI_Controller {
 		$this->load->view('homepage');
 		//$this->load->view('contato');
 		$this->load->view('static/footer.php');
+		$this->load->model('Msalgados');
 	}
 
 	public function contato()
@@ -74,6 +75,15 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('static/header.php');
 		$this->load->view('about');
+		$this->load->view('static/footer.php');
+	}
+
+	public function personalizar()
+	{
+		$this->load->model('Msalgados');
+		$data['resultado'] = $this->Msalgados->select();
+		$this->load->view('static/header.php');
+		$this->load->view('personalizar', $data);
 		$this->load->view('static/footer.php');
 	}
 }

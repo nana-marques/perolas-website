@@ -71,3 +71,5 @@ $route['cards_especiais'] = 'Especiais/cards_especiais';
 $route['cards_bolos/filtrar'] = 'Bolos/filtrar';
 
 $route['kit_festa'] = 'Produtos/kit';
+
+$route['personalizar'] = 'Home/personalizar';
