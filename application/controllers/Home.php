@@ -81,7 +81,9 @@ class Home extends CI_Controller {
 	public function personalizar()
 	{
 		$this->load->model('Msalgados');
-		$data['resultado'] = $this->Msalgados->select();
+		$this->load->model('Mdoces');
+		$data['resultadoD'] = $this->Mdoces->select();
+		$data['resultadoS'] = $this->Msalgados->select();
 		$this->load->view('static/header.php');
 		$this->load->view('personalizar', $data);
 		$this->load->view('static/footer.php');

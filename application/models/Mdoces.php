@@ -22,7 +22,8 @@ class Mdoces extends CI_Model{
             }
         }
 
-        $this->db->select('doces.nome,
+        $this->db->select(' doces.id,
+                            doces.nome,
                             doces.tipo,
                             doces.descricao');
 
