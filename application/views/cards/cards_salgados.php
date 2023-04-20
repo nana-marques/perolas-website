@@ -26,7 +26,7 @@
                     <div class="row mt-5">
                         <?php  
                         foreach ($result as $row=>$value) { ?>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-5 col-sm-6">
                             <div class="card" style="width: 17rem; margin-top: 1vw;">
                             <svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><rect width="100%" height="100%" fill="#777"/></svg>
                                 <div class="card-body">

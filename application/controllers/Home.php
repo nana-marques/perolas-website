@@ -82,8 +82,10 @@ class Home extends CI_Controller {
 	{
 		$this->load->model('Msalgados');
 		$this->load->model('Mdoces');
+
 		$data['resultadoD'] = $this->Mdoces->select();
 		$data['resultadoS'] = $this->Msalgados->select();
+		
 		$this->load->view('static/header.php');
 		$this->load->view('personalizar', $data);
 		$this->load->view('static/footer.php');

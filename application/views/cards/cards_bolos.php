@@ -33,8 +33,6 @@
                                     <h5 class="card-title"><?= $row->nome ?></h5>
                                     <p class="card-text"><small><?= $row->tipo ?></small></p> 
                                     <p class="card-text"><?= $row->descricao ?></p>
-                                    
-                                    
                                 </div>
                             </div>
                         </div>

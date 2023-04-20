@@ -72,35 +72,43 @@
                 <div class="container marketing">
                     <h3 style="margin-top: 1em;">Docinhos:</h3>
                 </div>
-                <div class="col-lg-4 mt-3">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <label class="mr-3" for="docinho">Nome:</label>
+                <div class="row col-lg-12" id="divdocinho">
+                    <div class="col-lg-6 mt-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="mr-3" for="docinho">Nome:</label>
+                            </div>
+                            <select class="custom-select" id="docinho">
+                                <option selected disabled>Escolha...</option>
+                                <?php foreach ($resultadoD as $row) { ?>
+                                    <option value="<?php $row->id ?>"><?= $row->nome ?></option>
+                                <?php } ?>
+                            </select>
                         </div>
-                        <select class="custom-select" id="docinho">
-                            <option selected disabled>Escolha...</option>
-                            <?php foreach ($resultadoD as $row) { ?>
-                                <option value="<?php $row->id ?>"><?= $row->nome ?></option>
-                            <?php } ?>
-                        </select>
                     </div>
+                    <div class="col-lg-6 mt-3">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="mr-3" for="quantidade">Quantidade:</label>
+                            </div>
+                            <input type="number" class="form-control col-lg-6" id="quantidade" min="10" step="5">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="col-lg-12 mt-3">
+                        <div class="form-group input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="mr-3" for="adicional">Adicionais (Especifique):</label>
+                            </div>
+                            <textarea name="adicional" id="adicional" class="form-control" placeholder="Sua mensagem" cols="50" rows="5"></textarea>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="col-lg-6 mt-3">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <label for="quantidade" class="mr-3">Quantidade:</label>
-                        </div>
-                        <input type="number" class="form-control col-3" id="quantidade" min="10" step="5">
-                    </div>
-                </div>
-                <br />
-                <div class="col-lg-6 mt-3">
-                    <div class="form-group input-group mb-3">
-                        <div class="input-group-prepend">
-                            <label class="mr-3" for="adicional">Adicionais (Especifique):</label>
-                        </div>
-                        <textarea name="adicional" id="adicional" class="form-control" placeholder="Sua mensagem" cols="50" rows="6"></textarea>
-                    </div>
+                <div class="col-lg-2 mt-3 float-right">
+					<button class="btn btn-secondary rounded-right text-left btn-lg" title="Adicionar Docinho" type="button" id="btnaddDoce">
+						<i class="fas fa-plus"></i>
+					</button>
                 </div>
             </div>
             <hr>
@@ -160,11 +168,15 @@
 
 <script>
     $(function() {
-    $('#btnadd').click(function(){
-        var newDiv = $('<div class="col-lg-6 mt-3"><div class="input-group"><div class="input-group-prepend"> <label class="mr-3" for="salgado">Nome:</label></div><select class="custom-select" id="salgado"><option selected disabled>Escolha...</option><?php foreach ($resultadoS as $row) { ?><option value="<?php $row->id ?>"><?= $row->nome ?></option><?php } ?></select></div></div><div class="col-lg-6 mt-3"><div class="input-group mb-3"><div class="input-group-prepend"><label for="quantidade" class="mr-3">Quantidade:</label></div><input type="number" class="form-control col-3" id="quantidade" min="10" step="5"></div></div><br />');
-       $('#divsalgado').append(newDiv);
+        $('#btnadd').click(function(){
+            var newDiv = $('<div class="col-lg-6 mt-3"><div class="input-group"><div class="input-group-prepend"> <label class="mr-3" for="salgado">Nome:</label></div><select class="custom-select" id="salgado"><option selected disabled>Escolha...</option><?php foreach ($resultadoS as $row) { ?><option value="<?php $row->id ?>"><?= $row->nome ?></option><?php } ?></select></div></div><div class="col-lg-6 mt-3"><div class="input-group mb-3"><div class="input-group-prepend"><label for="quantidade" class="mr-3">Quantidade:</label></div><input type="number" class="form-control col-3" id="quantidade" min="10" step="5"></div></div><br />');
+            $('#divsalgado').append(newDiv);
+        });
+        $('#btnaddDoce').click(function(){
+            var newDivDoce = $('<div class="col-lg-6 mt-3"><div class="input-group"><div class="input-group-prepend"><label class="mr-3" for="docinho">Nome:</label></div><select class="custom-select" id="docinho"><option selected disabled>Escolha...</option><?php foreach ($resultadoD as $row) { ?><option value="<?php $row->id ?>"><?= $row->nome ?></option><?php } ?></select></div></div><div class="col-lg-6 mt-3"><div class="input-group mb-3"><div class="input-group-prepend"><label class="mr-3" for="quantidade">Quantidade:</label></div><input type="number" class="form-control col-lg-6" id="quantidade" min="10" step="5"></div></div><br /><div class="col-lg-12 mt-3"><div class="form-group input-group mb-3"><div class="input-group-prepend"><label class="mr-3" for="adicional">Adicionais (Especifique):</label></div><textarea name="adicional" id="adicional" class="form-control" placeholder="Sua mensagem" cols="50" rows="5"></textarea></div></div>');
+            $('#divdocinho').append(newDivDoce);
+        });
     });
-});
 
 </script>
 
