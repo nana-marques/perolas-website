@@ -3,16 +3,12 @@
 <div class="modal fade" id="card-details" tabindex="-1" role="dialog" aria-labelledby="card-details-title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content text-dark">
-            <div class="modal-header">
-                <h5 class="modal-title" id="titulo">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <!-- <span aria-hidden="true">&times;</span> -->
-                </button>
-            </div>
             <div class="modal-body">  
                 <div class="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#card-details">
+                    <h3 name="inputnome" id="inputnome"></h3>
                     <!-- <svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><rect width="100%" height="100%" fill="#777"/></svg> -->
-                    <p class="card-text" id="modal_body"></p>
+                    <p class="card-text" id="modal_body"> </p>
+                    
                 </div>   
             </div>
         </div>
@@ -47,8 +43,8 @@
                     <div class="row mt-5">
                         <?php 
                         foreach ($result as $row) { ?>
-                        <div class="col-lg-3 col-md-4 col-sm-6" style="cursor:pointer;" id="submit" data-toggle="modal" data-target="#card-details">
-                            <div class="card cardH" style="width: 15rem; margin-top: 1vw;">
+                        <div class="col-lg-3 col-md-4 col-sm-6" style="cursor:pointer;">
+                            <div class="card cardH" style="width: 15rem; margin-top: 1vw;"  onclick="fillModalNome('<?= $row->nome ?>')" data-target="#card-details" data-toggle="modal">
                             <!-- <svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><rect width="100%" height="100%" fill="#777"/></svg> -->
                                 <div class="card-body">
                                     <h5 class="card-title" id="nome" value="<?= $row->nome ?>"><?= $row->nome ?></h5>
@@ -65,12 +61,20 @@
     </main>
 </div>
 
-<script type="text/javascript">
-    $("#submit").click(function () {
-        var nome = $("#nome").val();
-        var str = "You Have Entered " + nome;
-        $("#modal_body").html(str);
-    });
+<script>
+
+    function fillModalNome(nome) {
+     document.getElementById("inputnome").textContent = nome;
+    
+
+        console.log(nome);
+    }
+
+    // $("#submit").click(function () {
+    //     var nome = $("#nome").val();
+    //     var str = "You Have Entered " + nome;
+    //     $("#modal_body").html(str);
+    // });
 </script>
 
 </body>
