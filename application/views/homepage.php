@@ -63,7 +63,7 @@
         </div>
 
         <div class="container mt-5">
-            <h1 class="d-flex justify-content-center" id="produtos">Produtos:</h1>
+            <h1 class="d-flex justify-content-center" style="color:#752639;" id="produtos">Produtos:</h1>
             <hr class="bg-light">
             <div class="container marketing">
                 

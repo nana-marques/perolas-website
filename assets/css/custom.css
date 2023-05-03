@@ -99,7 +99,7 @@ body{
 }
   
 .custom-control-input:active~.custom-control-label::before {
-    background-color: #F4AFBD !important;
+    background-color: #f7bdc9 !important;
     border-color: #E55175 !important;
 }
   
@@ -131,5 +131,8 @@ body{
   
 .cardH:hover{
     transform: scale(1.02);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    box-shadow: 0 10px 20px rgba(229, 81, 117,.12), 0 4px 8px rgba(229, 81, 117,.06);
 }
+/* h1,h2,h3,h4,h5{
+    color:#752639;
+} */

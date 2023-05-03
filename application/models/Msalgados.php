@@ -27,7 +27,9 @@ class Msalgados extends CI_Model{
         $this->db->select(' salgados.id,
                             salgados.nome,
                             salgados.tipo,
-                            salgados.descricao');
+                            salgados.descricao,
+                            salgados.imagem,
+                            salgados.preco');
 
         
         $this->db->order_by($sortBy, $order);

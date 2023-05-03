@@ -24,9 +24,12 @@ class Mbolos extends CI_Model{
             }
         }
 
-        $this->db->select('bolos.nome,
+        $this->db->select('bolos.id,
+                            bolos.nome,
                             bolos.tipo,
-                            bolos.descricao');
+                            bolos.descricao,
+                            bolos.imagem,
+                            bolos.preco');
 
         
         $this->db->order_by($sortBy, $order);
@@ -34,7 +37,7 @@ class Mbolos extends CI_Model{
         $this->db->where($where);
 
         $retorno = $this->db->get(Mbolos::TABLE_NAME);
-        
+        //var_dump($retorno);die;
         return $retorno->result();
     }
 

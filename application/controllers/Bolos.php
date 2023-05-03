@@ -29,7 +29,7 @@ class Bolos extends CI_Controller {
 
 		$select =  $this->input->post("bolos");
 
-		// var_dump($select);die;
+		//var_dump($select);die;
 		if($this->input->post("bolos") == "Todos"){
 			$data['result2'] = $this->Mbolos->tipos();
 			$data['result'] = $this->Mbolos->select();
@@ -37,14 +37,15 @@ class Bolos extends CI_Controller {
 
 		}
 		else {
-
 			$data['result'] = $this->Mbolos->where($select);
 			$data['result2'] = $this->Mbolos->tipos();
+			//var_dump($data['result']);
+			return $this->load->view('cards/cards_bolos.php', $data);
 		}
 		
 		// $url = $this->uri->segment(0);
 		
-		$this->load->view('cards/cards_bolos.php', $data);
+		
 		$this->load->view('static/footer.php');
 		
 	}
@@ -62,7 +63,8 @@ class Bolos extends CI_Controller {
 			'result'  => $this->Mbolos->select(),
 		];
 	
-		
+		//var_dump($data['result2']);die;
+
 		$this->load->view('cards/cards_bolos.php', $data);
 		$this->load->view('static/footer.php');
 	}
