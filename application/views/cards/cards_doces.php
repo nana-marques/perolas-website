@@ -34,11 +34,10 @@
                     <h3 style="margin-top: 3vw;color:#752639;">Selecione uma categoria:</h3>
                     <form action="<?= base_url('Doces/filtrar') ?>" class="d-flex justify-content-center align-items-center" method="POST">
                         <select name="doces" id="doces" class="custom-select ml-3" style="width: 100%; margin-top: 3vw;">
-                            <option value="todos">Todos</option>
-                            <?php 
-                            foreach ($result2 as $value) { ?>
-                                <option value="<?= $value->tipo ?>"><?= $value->tipo ?></option>
-                            <?php } ?>
+                            <option <?php if (!isset($_POST["doces"])) { ?>selected="true" <?php }; ?> value="Todos">Todos</option>
+                            <option <?php if (@$_POST["doces"] == "Chocolate") { ?>selected="true" <?php }; ?> value="Chocolate">Chocolate</option>
+                            <option <?php if (@$_POST["doces"] == "Gourmet") { ?>selected="true" <?php }; ?> value="Gourmet" >Gourmet</option>
+                            
                         </select>
                         <button class="btn btn-primary btn-lg rounded-right" type="submit" style="margin-top: 3vw;">
                             <i class="fas fa-search"></i>
@@ -83,7 +82,7 @@
         document.getElementById("inputnome").textContent = array[1];
         document.getElementById("tipodoce").textContent = array[2];
         document.getElementById("modal_body").textContent = array[3];
-        document.getElementById("precodoce").textContent = array[4];
+        document.getElementById("precodoce").textContent = array[5];
     }
 
     // $("#submit").click(function () {

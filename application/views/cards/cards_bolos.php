@@ -39,22 +39,17 @@
                     <h3 style="margin-top:3vw;color:#752639;" class="display-5">Selecione uma categoria:</h3>
                     <form action="<?= base_url('cards_bolos/filtrar')?>" class="d-flex justify-content-center align-items-center" method="POST"> 
                         <select name="bolos" id="bolos" class="custom-select ml-3" style="width: 100%; margin-top: 3vw;">
-                            <?php  
-                                foreach ($result2 as $value) { ?>
-                                <option value="<?= $value->tipo ?>" ><?= $value->tipo ?></option>
-                            <?php } ?>   
-                            <option selected value="<?= (isset($value->tipo) ? $value->tipo : 'Todos') ?>"><?= (isset($value->tipo) ? $value->tipo : 'Todos') ?></option>
+                            <option <?php if (!isset($_POST["bolos"])) { ?>selected="true" <?php }; ?> value="Todos">Todos</option>
+                            <option <?php if (@$_POST["bolos"] == "Chocolate") { ?>selected="true" <?php }; ?> value="Chocolate">Chocolate</option>
+                            <option <?php if (@$_POST["bolos"] == "Bolo Branco") { ?>selected="true" <?php }; ?> value="Bolo Branco" >Bolo Branco</option>
+                            <option <?php if (@$_POST["bolos"] == "Caseiro") { ?>selected="true" <?php }; ?> value="Caseiro" >Caseiro</option>
                         </select>
                         <button class="btn btn-primary btn-lg rounded-right" type="submit" style="margin-top:3vw;">
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
                 </div>
-                <script>
-                    $("#bolos").live("change", function(event){
-                        $("<?= $value->tipo ?>").html($(this).val());
-                    });
-                </script>
+                
             </div>
             <div class="row mt-5">
                 <div class="container marketing">

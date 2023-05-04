@@ -38,11 +38,10 @@
                     <h3 style="margin-top: 3vw;color:#752639;">Selecione uma categoria:</h3>
                     <form action="<?= base_url('Salgados/filtrar') ?>" class="d-flex justify-content-center align-items-center" method="POST">
                         <select name="salgados" id="salgados" class="custom-select ml-3" style="width: 100%; margin-top: 3vw;">
-                            <option value="todos">Todos</option>
-                            <?php 
-                            foreach ($result2 as $value) { ?>
-                                <option value="<?= $value->tipo ?>"><?= $value->tipo ?></option>
-                            <?php } ?>
+                            <option <?php if (!isset($_POST["salgados"])) { ?>selected="true" <?php }; ?> value="Todos">Todos</option>
+                            <option <?php if (@$_POST["salgados"] == "Frito") { ?>selected="true" <?php }; ?> value="Frito">Frito</option>
+                            <option <?php if (@$_POST["salgados"] == "Assado") { ?>selected="true" <?php }; ?> value="Assado" >Assado</option>
+                            
                         </select>
                         <button class="btn btn-primary btn-lg rounded-right" type="submit" style="margin-top: 3vw;">
                             <i class="fas fa-search"></i>
@@ -53,7 +52,7 @@
             <div class="row mt-5">
                 <div class="container marketing">
                     <div class="row mt-5">
-                        <h1 class="m-3" style="color:#752639;">Nossos Bolos:</h1>
+                        <h1 class="m-3" style="color:#752639;">Nossos Salgados:</h1>
                     </div>
                     <div class="row mt-5">
                         <?php 
