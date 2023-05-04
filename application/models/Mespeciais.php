@@ -22,9 +22,11 @@ class Mespeciais extends CI_Model{
             }
         }
 
-        $this->db->select('especiais.nome,
+        $this->db->select('especiais.id,
+                            especiais.nome,
                             especiais.tipo,
-                            especiais.categoria');
+                            especiais.categoria,
+                            especiais.preco');
 
         
         $this->db->order_by($sortBy, $order);

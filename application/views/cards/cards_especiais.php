@@ -51,23 +51,28 @@
             </div>
             <div class="row mt-5">
                 <div class="container marketing">
-                <h1 style="margin-top: 4vw;">Datas Especiais:</h1>
+                    <div class="row mt-5">
+                        <h1 class="m-3" style="color:#752639;">Datas Especiais:</h1>
+                    </div>
                     <div class="row mt-5">
                         <?php 
-                        foreach ($result as $value) { ?>
-                        <div class="col-lg-3 col-md-5 col-sm-6">
-                            <div class="card" style="width: 17rem; margin-top: 1vw;">
+                        foreach ($result as $row) { 
+                            $array = json_decode(json_encode($row),true);
+                            $array2 = join('-', $array);?>
+                        <div class="col-lg-3 col-md-4 col-sm-6" style="cursor:pointer;">
+                            <div class="card cardH" style="width: 15rem; margin-top: 1vw; min-height:10rem;"  onclick="fillModalNome('<?= $array2 ?>')" data-target="#card-details" data-toggle="modal">
                             <!-- <svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><rect width="100%" height="100%" fill="#777"/></svg> -->
                                 <div class="card-body">
-                                    <h5 class="card-title"><?= $value->nome?></h5>
-                                    <p class="card-text"><small><?= $value->tipo ?></small></p>
-                                    <p class="card-text"><?= $value->tipo ?></p>
+                                    <h5 class="card-title" style="color:#752639;" id="nome" value="<?= $row->nome ?>"><?= $row->nome ?></h5>
+                                    <p class="card-text" id="tipo" value="<?= $row->tipo ?>"><small><?= $row->tipo ?></small></p> 
+                                    <!-- <p class="card-text" id="desc" value="<?= $row->descricao ?>"><?= $row->descricao ?></p> -->
+                                    <p hidden style="display:none;" class="card-text" id="desc" value="<?= $row->preco ?>"><?= $row->preco ?></p>
                                 </div>
                             </div>
                         </div>
                         <?php } ?>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </main>
@@ -77,9 +82,9 @@
     function fillModalNome(nome) {
         let array = nome.split("-");
         console.log(array);
-        document.getElementById("inputnome").textContent = array[2];
+        document.getElementById("inputnome").textContent = array[1];
         document.getElementById("tipoespecial").textContent = array[3];
-        document.getElementById("modal_body").textContent = array[4];
+        // document.getElementById("modal_body").textContent = array[4];
         document.getElementById("precoespecial").textContent = array[5];
     }
 

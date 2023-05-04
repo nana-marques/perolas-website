@@ -62,8 +62,25 @@
             background-color: #F4AFBD;
             border-color: #F4AFBD;
         }
+
+        .btn-primary:link{
+            background-color: #E55175;
+            border-color: #E55175;
+        }
+
+        
         
         .btn-primary:hover{
+            background-color: #E55175;
+            border-color: #E55175;
+        }
+
+        .btn-primary:active{
+            background-color: #E55175 !important;
+            border-color: #E55175 !important;
+        }
+
+        .btn-primary:focus{
             background-color: #E55175;
             border-color: #E55175;
         }

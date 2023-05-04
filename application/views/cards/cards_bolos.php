@@ -83,8 +83,8 @@
 <script>
 
     function fillModalNome(nome) {
+        console.log(nome);
         let array = nome.split("-");
-        console.log(array);
         document.getElementById("inputnome").textContent = array[1];
         document.getElementById("tipobolo").textContent = array[2];
         document.getElementById("modal_body").textContent = array[3];

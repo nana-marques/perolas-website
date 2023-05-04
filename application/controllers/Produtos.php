@@ -21,4 +21,11 @@ class Produtos extends CI_Controller {
 		$this->load->view('kit_festa.php');
 		$this->load->view('static/footer.php');
 	}
+
+	public function personalizar(){
+		if ($this->input->method() == 'post') {
+            $post = $this->input->post(null, true);
+			var_dump($post);die;
+		}
+	}
 }
