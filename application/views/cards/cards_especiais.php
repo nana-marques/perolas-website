@@ -36,7 +36,7 @@
             <div class="row mt-5">
                 <div class="container d-flex justify-content-center ">
                     <h3 style="margin-top: 3vw;">Selecione uma categoria:</h3>
-                    <form action="<?= base_url('Especiais/filtrar') ?>" class="d-flex justify-content-center align-items-center" method="POST">
+                    <form action="<?= base_url('cards_especiais/filtrar') ?>" class="d-flex justify-content-center align-items-center" method="POST">
                         <select name="especiais" id="especiais" class="custom-select ml-3" style="width: 100%; margin-top: 3vw;">
                             <option <?php if (!isset($_POST["especiais"])) { ?>selected="true" <?php }; ?> value="Todos">Todos</option>
                             <option <?php if (@$_POST["especiais"] == "Doce") { ?>selected="true" <?php }; ?> value="Doce">Doce</option>

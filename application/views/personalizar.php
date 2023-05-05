@@ -19,7 +19,7 @@
                         <div class="input-group-prepend">
                             <label class="mr-3" for="tamanho">Tamanho do Bolo (Por Kilo):</label>
                         </div>
-                        <select class="custom-select" name="tamanho" id="tamanho">
+                        <select class="custom-select" name="tamanho" id="tamanho" required>
                             <option selected>Escolha...</option>
                             <option value="1kg">1 kg</option>
                             <option value="1,5kg">1 kg e meio</option>
@@ -78,7 +78,7 @@
                             <div class="input-group-prepend">
                                 <label class="mr-3" for="docinho">Nome:</label>
                             </div>
-                            <select class="custom-select" name="docinho" id="docinho">
+                            <select class="custom-select" name="docinho" id="docinho" required>
                                 <option selected disabled>Escolha...</option>
                                 <?php foreach ($resultadoD as $row) { ?>
                                     <option value="<?php echo $row->nome ?>"><?= $row->nome ?></option>
@@ -91,16 +91,16 @@
                             <div class="input-group-prepend">
                                 <label class="mr-3" for="quantidade">Quantidade:</label>
                             </div>
-                            <input type="number" class="form-control col-lg-6" name="quantidade" id="quantidade" min="10" step="5">
+                            <input type="number" class="form-control col-lg-6" name="quantidade" id="quantidade" min="10" step="5" required>
                         </div>
                     </div>
                     <br />
                     <div class="col-lg-12 mt-3">
                         <div class="form-group input-group mb-3">
                             <div class="input-group-prepend">
-                                <label class="mr-3" for="adicional">Adicionais (Especifique):</label>
+                                <label class="mr-3" for="adicionaldocinho">Adicionais (Especifique):</label>
                             </div>
-                            <textarea name="adicional" id="adicional" class="form-control" placeholder="Sua mensagem" cols="50" rows="5"></textarea>
+                            <textarea name="adicionaldocinho" class="form-control" placeholder="Sua mensagem" cols="50" rows="5"></textarea>
                         </div>
                     </div>
                     
@@ -147,9 +147,9 @@
                     <div class="col-lg-6 mt-3">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <label for="quantidadeS1" class="mr-3">Quantidade:</label>
+                                <label for="quantidadesalgado" class="mr-3">Quantidade:</label>
                             </div>
-                            <input type="number" class="form-control col-3" name="quantidadeS1" id="quantidadeS1" min="10" step="5">
+                            <input type="number" class="form-control col-3" name="quantidadesalgado" min="10" step="5">
                         </div>
                     </div>
                     <br />
@@ -171,13 +171,16 @@
 
 <script>
     $(function() {
+        var count = 1;
+        var countD = 1;
         $('#btnadd').click(function(){
+            count++;
             var newDiv = $('<div class="col-lg-6 mt-3">\
             <div class="input-group">\
                 <div class="input-group-prepend"> \
-                    <label class="mr-3" for="salgado">Nome:</label>\
+                    <label class="mr-3" for="salgadoadd'+ count +'">Nome:</label>\
                 </div>\
-                <select class="custom-select" name="salgado" id="salgado">\
+                <select class="custom-select" name="salgadoadd'+ count +'" id="salgado">\
                     <option selected disabled>Escolha...</option>\
                     <?php foreach ($resultadoS as $row) { ?>\
                     <option value="<?php echo $row->nome ?>"><?= $row->nome ?></option>\
@@ -187,20 +190,21 @@
             <div class="col-lg-6 mt-3">\
                 <div class="input-group mb-3">\
                     <div class="input-group-prepend">\
-                        <label for="quantidade2" class="mr-3">Quantidade:</label>\
+                        <label for="quantidadesalgado'+ count +'" class="mr-3">Quantidade:</label>\
                     </div>\
-                    <input type="number" min="10" max="200" class="form-control col-3" name="quantidade2" id="quantidade2" min="10" step="5">\
+                    <input type="number" min="10" max="200" class="form-control col-3" name="quantidadesalgado'+ count +'"  min="10" step="5">\
                 </div>\
             </div><br />');
             $('#divsalgado').append(newDiv);
         });
         $('#btnaddDoce').click(function(){
+            count++;
             var newDivDoce = $('<div class="col-lg-6 mt-3">\
             <div class="input-group">\
                 <div class="input-group-prepend">\
-                    <label class="mr-3" for="docinho1">Nome:</label>\
+                    <label class="mr-3" for="docinhoadd'+ countD +'">Nome:</label>\
                 </div>\
-                <select class="custom-select" name="docinho1" id="docinho1">\
+                <select class="custom-select" name="docinhoadd'+ countD +'">\
                     <option selected disabled>Escolha...</option>\
                     <?php foreach ($resultadoD as $row) { ?>\
                     <option value="<?php echo $row->nome ?>"><?= $row->nome ?></option>\
@@ -210,17 +214,17 @@
             <div class="col-lg-6 mt-3">\
                 <div class="input-group mb-3">\
                     <div class="input-group-prepend">\
-                        <label class="mr-3" for="quantidade3">Quantidade:</label>\
+                        <label class="mr-3" for="quantidadedocinho'+ countD +'">Quantidade:</label>\
                     </div>\
-                    <input type="number" min="10" max="200" class="form-control col-lg-6" name="quantidade3" id="quantidade3" min="10" step="5">\
+                    <input type="number" min="10" max="200" class="form-control col-lg-6" name="quantidadedocinho'+ countD +'" min="10" step="5">\
                 </div>\
             </div><br />\
             <div class="col-lg-12 mt-3">\
                 <div class="form-group input-group mb-3">\
                     <div class="input-group-prepend">\
-                        <label class="mr-3" for="adicional1">Adicionais (Especifique):</label>\
+                        <label class="mr-3" for="adicionaldocinho'+ countD +'">Adicionais (Especifique):</label>\
                     </div>\
-                    <textarea name="adicional1" id="adicional1" class="form-control" placeholder="Sua mensagem" cols="50" rows="5"></textarea>\
+                    <textarea name="adicionaldocinho'+ countD +'" class="form-control" placeholder="Sua mensagem" cols="50" rows="5"></textarea>\
                 </div>\
             </div>');
             $('#divdocinho').append(newDivDoce);

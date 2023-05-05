@@ -30,12 +30,28 @@ class Especiais extends CI_Controller {
 
 		$select =  $this->input->post("especiais");
 		
-		$data['result'] = $this->Mespeciais->where($select);
-		$data['result2'] = $this->Mespeciais->tipos();
+		//var_dump($select);die;
+
+		if($select){
+			if(($this->input->post("especiais") == "Todos")){
+				$data['result2'] = $this->Mespeciais->tipos();
+				$data['result'] = $this->Mespeciais->select();
+				$_POST["especiais"] = "Todos";
+				return ([$this->load->view('cards/cards_especiais.php', $data), $this->load->view('static/footer.php')]);
+	
+			}
+			else {
+				$data['result'] = $this->Mespeciais->where($select);
+				$data['result2'] = $this->Mespeciais->tipos();
+				//var_dump($data['result']);
+				$_POST["especiais"] = $select;
+				return ([$this->load->view('cards/cards_especiais.php', $data), $this->load->view('static/footer.php')]);
+			}
+		}
 		
 		// $url = $this->uri->segment(0);
 		
-		$this->load->view('cards/cards_especiais.php', $data);
+		
 		$this->load->view('static/footer.php');
     }
 

@@ -69,6 +69,9 @@ $route['cards_salgados'] = 'Salgados/cards_salgados';
 $route['cards_especiais'] = 'Especiais/cards_especiais';
 
 $route['cards_bolos/filtrar'] = 'Bolos/filtrar';
+$route['cards_especiais/filtrar'] = 'Especiais/filtrar';
+$route['cards_doces/filtrar'] = 'Doces/filtrar';
+$route['cards_salgados/filtrar'] = 'Salgados/filtrar';
 
 $route['kit_festa'] = 'Produtos/kit';
 

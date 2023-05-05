@@ -33,12 +33,28 @@ class Salgados extends CI_Controller {
 
 		$select =  $this->input->post("salgados");
 		
-		$data['result'] = $this->Msalgados->where($select);
-		$data['result2'] = $this->Msalgados->tipos();
+		//var_dump($select);die;
+
+		if($select){
+			if(($this->input->post("salgados") == "Todos")){
+				$data['result2'] = $this->Msalgados->tipos();
+				$data['result'] = $this->Msalgados->select();
+				$_POST["salgados"] = "Todos";
+				return ([$this->load->view('cards/cards_salgados.php', $data), $this->load->view('static/footer.php')]);
+	
+			}
+			else {
+				$data['result'] = $this->Msalgados->where($select);
+				$data['result2'] = $this->Msalgados->tipos();
+				//var_dump($data['result']);
+				$_POST["salgados"] = $select;
+				return ([$this->load->view('cards/cards_salgados.php', $data), $this->load->view('static/footer.php')]);
+			}
+		}
 		
 		// $url = $this->uri->segment(0);
 		
-		$this->load->view('cards/cards_salgados.php', $data);
+		
 		$this->load->view('static/footer.php');
     }
 

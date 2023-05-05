@@ -36,7 +36,7 @@ class Bolos extends CI_Controller {
 				$data['result2'] = $this->Mbolos->tipos();
 				$data['result'] = $this->Mbolos->select();
 				$_POST["bolos"] = "Todos";
-				return $this->load->view('cards/cards_bolos.php', $data);
+				return ([$this->load->view('cards/cards_bolos.php', $data), $this->load->view('static/footer.php')]);
 	
 			}
 			else {
@@ -44,7 +44,7 @@ class Bolos extends CI_Controller {
 				$data['result2'] = $this->Mbolos->tipos();
 				//var_dump($data['result']);
 				$_POST["bolos"] = $select;
-				return $this->load->view('cards/cards_bolos.php', $data);
+				return ([$this->load->view('cards/cards_bolos.php', $data), $this->load->view('static/footer.php')]);
 			}
 		}
 		

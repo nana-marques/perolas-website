@@ -31,13 +31,27 @@ class Doces extends CI_Controller {
 
 		$select =  $this->input->post("doces");
 		
-		$data['result'] = $this->Mdoces->where($select);
-		$data['result2'] = $this->Mdoces->tipos();
+		//var_dump($select);die;
+
+		if($select){
+			if(($this->input->post("doces") == "Todos")){
+				$data['result2'] = $this->Mdoces->tipos();
+				$data['result'] = $this->Mdoces->select();
+				$_POST["doces"] = "Todos";
+				return ([$this->load->view('cards/cards_doces.php', $data), $this->load->view('static/footer.php')]);
+	
+			}
+			else {
+				$data['result'] = $this->Mdoces->where($select);
+				$data['result2'] = $this->Mdoces->tipos();
+				//var_dump($data['result']);
+				$_POST["doces"] = $select;
+				return ([$this->load->view('cards/cards_doces.php', $data), $this->load->view('static/footer.php')]);
+			}
+		}
 		
 		// $url = $this->uri->segment(0);
 		
-		$this->load->view('cards/cards_doces.php', $data);
-		$this->load->view('static/footer.php');
     }
 
     public function cards_doces()
