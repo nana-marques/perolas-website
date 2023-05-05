@@ -14,6 +14,7 @@
                 </div>   
             </div>
             <div class="modal-footer">
+                <p>Preço de 100 unidades:</p>
                 <button disabled="disabled" class="btn" style="background-color:#e55175;">
                     <span id="precodoce" class="mt-2" style="color:#f7f7f7;font-weight:bold;"></span>
                 </button>
