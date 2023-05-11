@@ -23,9 +23,15 @@ class Produtos extends CI_Controller {
 	}
 
 	public function personalizar(){
+		$this->load->model('Personalizados');
 		if ($this->input->method() == 'post') {
             $post = $this->input->post(null, true);
-			var_dump($post);die;
+			$this->Personalizados->adicionar($post);
+			//$this->output->enable_profiler(TRUE);
+			redirect('homepage');
+		}
+		else {
+			redirect('homepage');
 		}
 	}
 }
