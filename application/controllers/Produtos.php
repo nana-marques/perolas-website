@@ -28,7 +28,12 @@ class Produtos extends CI_Controller {
             $post = $this->input->post(null, true);
 			$this->Personalizados->adicionar($post);
 			//$this->output->enable_profiler(TRUE);
-			redirect('homepage');
+			$this->load->view('static/header.php');
+			$this->load->view('orcamento.php', array('post'=>$post));
+			$this->load->view('static/footer.php');
+			//redirect('homepage');
+			//var_dump($post);
+
 		}
 		else {
 			redirect('homepage');

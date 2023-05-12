@@ -6,13 +6,13 @@
         <div class="container mt-5">
             <div class="row mt-5">
                 <div class="container marketing">
-                    <h1 style="margin-top: 1em;">Personalizar:</h1>
+                    <h1 style="margin-top: 1em;color:#752639;">Personalizar:</h1>
                 </div>
             </div>
             <hr>
             <div class="form-group row mt-4">
                 <div class="container marketing">
-                    <h3 style="margin-top: 1em;">Bolo:</h3>
+                    <h3 style="margin-top: 1em;color:#752639;">Bolo:</h3>
                 </div>
                 <div class="col-lg-4 mt-3">
                     <div class="input-group mb-3">
@@ -70,7 +70,7 @@
             <hr>
             <div class="form-group row mt-4">
                 <div class="container marketing">
-                    <h3 style="margin-top: 1em;">Docinhos:</h3>
+                    <h3 style="margin-top: 1em;color:#752639;">Docinhos:</h3>
                 </div>
                 <div class="row col-lg-12" id="divdocinho">
                     <div class="col-lg-6 mt-3">
@@ -128,7 +128,7 @@
             </div>
             <div class="form-group row mt-3" id="divBloqueio"> 
                 <div class="container marketing">
-                    <h3 style="margin-top: 1em;">Salgados:</h3>
+                    <h3 style="margin-top: 1em;color:#752639;">Salgados:</h3>
                 </div>
                 <div class="row col-lg-12" id="divsalgado">
                     <div class="col-lg-6 mt-3">

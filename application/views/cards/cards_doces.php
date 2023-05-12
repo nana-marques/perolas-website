@@ -26,13 +26,16 @@
     .card:hover {
         background-color: #fed7da !important;    
     }
+    .jumbotron{
+        background-color: #fed7da !important;
+    }
 </style>
 <div class="mt-5">
     <main role="main">
         <div class="container mt-5">
-            <div class="row mt-5">
+            <div class="row jumbotron mt-5">
                 <div class="container d-flex justify-content-center ">
-                    <h3 style="margin-top: 3vw;color:#752639;">Selecione uma categoria:</h3>
+                    <h3 style="margin-top: 3vw;color:#752639;" class="display-5">Selecione uma categoria:</h3>
                     <form action="<?= base_url('cards_doces/filtrar') ?>" class="d-flex justify-content-center align-items-center" method="POST">
                         <select name="doces" id="doces" class="custom-select ml-3" style="width: 100%; margin-top: 3vw;">
                             <option <?php if (!isset($_POST["doces"])) { ?>selected="true" <?php }; ?> value="Todos">Todos</option>
