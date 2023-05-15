@@ -7,17 +7,8 @@ html:focus-within{
     color: #f3f3f3 !important;
 }
 
-.navbar-dark{
-    background-color: red;
-}
-
 body{
     color:black;
-}
-
-.bg-secondary{
-    /*color: #534d56;*/
-    background-color: #3C2439!important;
 }
 
 .nav-link{
@@ -27,24 +18,6 @@ body{
 .show{
     color: #f7f7f7 !important;
 
-}
-
-.btn-primary{
-    background-color: #502F4C;
-    border-color: #502F4C;
-}
-
-.btn-primary:hover{
-    background-color: #3C2439;
-    border-color: #3C2439;
-}
-
-.btn-dark{
-    color: #281826 !important;
-}
-
-.btn-dark:hover{
-    color: #140C13 !important;
 }
 
 /* scroll up */
@@ -75,17 +48,7 @@ body{
     bottom: 5rem;
 }
 
-.btn-secondary,
-.btn-secondary:active,
-.btn-secondary:visited,
-.btn-secondary:focus {
-    background-color: #8f729e;
-    border-color: #8f729e;
-}
-.btn-secondary:hover{
-    background-color: #684E70;
-    border-color: #684E70;
-}
+
 
 
 .custom-control-input:focus~.custom-control-label::before {
@@ -136,3 +99,27 @@ body{
 /* h1,h2,h3,h4,h5{
     color:#752639;
 } */
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 3em; /* this needs to be bigger than footer height*/
+}
+  
+.footer {
+    position: relative;
+    margin-top: -1em; /* negative value of footer height */
+    height: 4em;
+    clear: both;
+    padding-top:1em;
+    color: #f7f7f7;
+    font-weight: bolder;
+} 
+
+footer a:hover{
+    text-decoration: none;
+    color: #E55175;
+}

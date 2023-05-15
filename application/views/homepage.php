@@ -1,5 +1,5 @@
-<body>
-<div>
+<body id="wrap">
+<div id="main">
     <main role="main">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">

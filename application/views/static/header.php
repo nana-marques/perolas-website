@@ -67,8 +67,6 @@
             background-color: #E55175;
             border-color: #E55175;
         }
-
-        
         
         .btn-primary:hover{
             background-color: #E55175;
@@ -80,9 +78,10 @@
             border-color: #E55175 !important;
         }
 
-        .btn-primary:focus{
+        .btn-primary:focus, .btn-primary.focus{
             background-color: #E55175;
             border-color: #E55175;
+            box-shadow: 0 0 0 0.2rem rgba(229, 81, 117, .5)!important;
         }
         
         .btn-dark{
@@ -98,8 +97,8 @@
             border-color: #f39cbc !important;
         }
         
-        footer a{
-            color: #E55175;
+        footer a, footer p{
+            color: #f7f7f7;
             text-decoration: none;
         }
         
