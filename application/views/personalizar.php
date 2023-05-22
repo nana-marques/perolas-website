@@ -91,7 +91,7 @@
                             <div class="input-group-prepend">
                                 <label class="mr-3" for="quantidade">Quantidade:</label>
                             </div>
-                            <input type="number" class="form-control col-lg-6" name="quantidade" id="quantidade" min="10" step="5" required>
+                            <input type="number" class="form-control col-lg-6" name="quantidade" id="quantidade" min="10" step="10" required>
                         </div>
                     </div>
                     <br />
@@ -149,7 +149,7 @@
                             <div class="input-group-prepend">
                                 <label for="quantidadesalgado" class="mr-3">Quantidade:</label>
                             </div>
-                            <input type="number" class="form-control col-3" name="quantidadesalgado" min="10" step="5">
+                            <input type="number" class="form-control col-3" name="quantidadesalgado" min="10" step="10">
                         </div>
                     </div>
                     <br />
@@ -192,7 +192,7 @@
                     <div class="input-group-prepend">\
                         <label for="quantidadesalgado'+ count +'" class="mr-3">Quantidade:</label>\
                     </div>\
-                    <input type="number" min="10" max="200" class="form-control col-3" name="quantidadesalgado'+ count +'"  min="10" step="5">\
+                    <input type="number" min="10" max="200" class="form-control col-3" name="quantidadesalgado'+ count +'"  min="10" step="10">\
                 </div>\
             </div><br />');
             $('#divsalgado').append(newDiv);
@@ -216,7 +216,7 @@
                     <div class="input-group-prepend">\
                         <label class="mr-3" for="quantidadedocinho'+ countD +'">Quantidade:</label>\
                     </div>\
-                    <input type="number" min="10" max="200" class="form-control col-lg-6" name="quantidadedocinho'+ countD +'" min="10" step="5">\
+                    <input type="number" min="10" max="200" class="form-control col-lg-6" name="quantidadedocinho'+ countD +'" min="10" step="10">\
                 </div>\
             </div><br />\
             <div class="col-lg-12 mt-3">\
