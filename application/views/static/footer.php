@@ -6,8 +6,8 @@
                 <div class="mb-4 justify-content-around d-flex"> 
                     <a style="font-weight:bolder;" href="<?= base_url('contato') ?>">E-mail</a><span style="color:#f7f7f7;font-size:24px;">&middot;</span>
                     <a style="font-weight:bolder;" href="<?= base_url('about') ?>">Sobre</a><span style="color:#f7f7f7;font-size:24px;">&middot;</span>
-                    <a style="font-weight:bolder;" href="https://api.whatsapp.com/send?phone=1111111111" title="Nosso Whatsapp"><i style="font-size:24px" class="fa fa-whatsapp"></i></a><span style="color:#f7f7f7;font-size:24px;">&middot;</span>
-                    <a style="font-weight:bolder;" href="https://instagram.com" title="Nosso Instagram"><i style="font-size:24px" class="fa fa-instagram"></i></a>
+                    <a style="font-weight:bolder;" target="_blank" href="https://api.whatsapp.com/send?phone=11959102644" title="Nosso Whatsapp"><i style="font-size:24px" class="fa fa-whatsapp"></i></a><span style="color:#f7f7f7;font-size:24px;">&middot;</span>
+                    <a style="font-weight:bolder;" target="_blank" href="https://instagram.com/perolasneide" title="Nosso Instagram"><i style="font-size:24px" class="fa fa-instagram"></i></a>
                 </div>
             </div>
         </div>

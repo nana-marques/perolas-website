@@ -9,8 +9,8 @@
             </div>
             <hr>
             <div class="form-group row mt-4">
-                <div class="container marketing">
-                    <h3 style="margin-top: 1em;">Bolo:</h3>
+                <h3 style="margin-top: 1em;">Bolo:</h3>
+                <div class="row container marketing">
                     <br />
                     <?php 
                         $tamanho = $post['tamanho'];
@@ -69,11 +69,12 @@
 
                     ?>
                     <p><?= $post['tamanho']; ?>, <?= $post['massa']; ?>, <?= $post['decoracao']; ?></p>
+                    <br />
                     <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
                 </div>
-                <div class="container marketing">
-                    <h3 style="margin-top: 1em;">Doces:</h3>
-                    <br />
+                <h3 style="margin-top: 1em;">Doces:</h3>
+                <div class="row container marketing">
+                    <div class="col-3">
                     <?php 
                         $quantidade = $post['quantidade'];
                         $qtd = ceil($quantidade / 5) * 5;
@@ -82,31 +83,219 @@
 
                         if ($qtd < 100){
                             $preco += 20;
-                            echo "<p class='badge p-1 text-white bg-danger'>Selecione no minimo 100 docinhos!</p>";
+                            echo "<p class='pt-1 mt-1 badge text-white bg-danger'>Selecione no minimo 100 docinhos!</p>";
                         }
 
                     ?>
-                    <p><?= $post['docinho']; ?>, <?= $post['quantidade']; ?><?= isset($post['adicionaldocinho']) ? ($post['adicionaldocinho']) : ''; ?></p>
+                    <p class=""><?= $post['docinho']; ?>, <?= $post['quantidade']; ?><?= isset($post['adicionaldocinho']) ? ($post['adicionaldocinho']) : ''; ?></p>
                     <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php if(isset($post['docinhoadd1'])){?>
+                    <div class="col-3">
+                        <?php 
+                            $quantidade = $post['quantidadedocinho1'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+    
+    
+                            if ($qtd < 100){
+                                $preco += 20;
+                                
+                            }
+    
+                        ?>
+                        <p><?= $post['docinhoadd1']; ?>, <?= $post['quantidadedocinho1']; ?><?= isset($post['adicionaldocinho1']) ? ($post['adicionaldocinho1']) : ''; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php }?>
+                    <?php if(isset($post['docinhoadd2'])){?>
+                    <div class="col-3">
+                        <br />
+                        <?php 
+                            $quantidade = $post['quantidadedocinho2'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+    
+    
+                            if ($qtd < 100){
+                                $preco += 20;
+                            }
+    
+                        ?>
+                        <p><?= $post['docinhoadd2']; ?>, <?= $post['quantidadedocinho2']; ?><?= isset($post['adicionaldocinho2']) ? ($post['adicionaldocinho2']) : ''; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php }?>
+                    <?php if(isset($post['docinhoadd3'])){?>
+                    <div class="col-3">
+                        <br />
+                        <?php 
+                            $quantidade = $post['quantidadedocinho3'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+    
+    
+                            if ($qtd < 100){
+                                $preco += 20;
+                            }
+    
+                        ?>
+                        <p><?= $post['docinhoadd3']; ?>, <?= $post['quantidadedocinho3']; ?><?= isset($post['adicionaldocinho3']) ? ($post['adicionaldocinho3']) : ''; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php }?>
+                    <?php if(isset($post['docinhoadd4'])){?>
+                    <div class="col-3">
+                        <br />
+                        <?php 
+                            $quantidade = $post['quantidadedocinho4'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+    
+    
+                            if ($qtd < 100){
+                                $preco += 20;
+                            }
+    
+                        ?>
+                        <p><?= $post['docinhoadd4']; ?>, <?= $post['quantidadedocinho4']; ?><?= isset($post['adicionaldocinho4']) ? ($post['adicionaldocinho4']) : ''; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>    
+                    <?php }?>
+                    <?php if(isset($post['docinhoadd5'])){?>
+                    <div class="col-3">
+                        <br />
+                        <?php 
+                            $quantidade = $post['quantidadedocinho5'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+    
+    
+                            if ($qtd < 100){
+                                $preco += 20;
+                            }
+    
+                        ?>
+                        <p><?= $post['docinhoadd5']; ?>, <?= $post['quantidadedocinho5']; ?><?= isset($post['adicionaldocinho5']) ? ($post['adicionaldocinho5']) : ''; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php }?>
                 </div>
                 <?php if(isset($post['salgado'])){?>
-                <div class="container marketing">
-                    <h3 style="margin-top: 1em;">Salgados:</h3>
-                    <br />
-                    <?php 
-                        $quantidade = $post['quantidadesalgado'];
-                        $qtd = ceil($quantidade / 5) * 5;
-                        $preco = 20;
+                <h3 style="margin-top: 1em;">Salgados:</h3>
+                <div class="row container marketing">
+                    <div class="col-3">
+                        <br />
+                        <?php 
+                            $quantidade = $post['quantidadesalgado'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
 
 
-                        if ($qtd < 50){
-                            $preco += 20;
-                            echo "<p class='badge p-1 text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
-                        }
+                            if ($qtd < 50){
+                                $preco += 20;
+                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
+                            }
 
-                    ?>
-                    <p><?= $post['salgado']; ?>, <?= $post['quantidadesalgado']; ?></p>
-                    <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                        ?>
+                        <p><?= $post['salgado']; ?>, <?= $post['quantidadesalgado']; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php if(isset($post['salgadoadd1'])){?>
+                    <div class="col-3">
+                        <br />
+                        <?php 
+                            $quantidade = $post['quantidadesalgado1'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+    
+    
+                            if ($qtd < 50){
+                                $preco += 20;
+                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
+                            }
+    
+                        ?>
+                        <p><?= $post['salgadoadd1']; ?>, <?= $post['quantidadesalgado1']; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php }?>
+                    <?php if(isset($post['salgadoadd2'])){?>
+                    <div class="col-3">
+                        <br />
+                        <?php 
+                            $quantidade = $post['quantidadesalgado2'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+    
+    
+                            if ($qtd < 50){
+                                $preco += 20;
+                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
+                            }
+    
+                        ?>
+                        <p><?= $post['salgadoadd2']; ?>, <?= $post['quantidadesalgado2']; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php }?>
+                    <?php if(isset($post['salgadoadd3'])){?>
+                    <div class="col-3">
+                        <br />
+                        <?php 
+                            $quantidade = $post['quantidadesalgado3'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+    
+    
+                            if ($qtd < 50){
+                                $preco += 20;
+                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
+                            }
+    
+                        ?>
+                        <p><?= $post['salgadoadd3']; ?>, <?= $post['quantidadesalgado3']; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php }?>
+                    <?php if(isset($post['salgadoadd4'])){?>
+                    <div class="col-3">
+                        <br />
+                        <?php 
+                            $quantidade = $post['quantidadesalgado4'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+    
+    
+                            if ($qtd < 50){
+                                $preco += 20;
+                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
+                            }
+    
+                        ?>
+                        <p><?= $post['salgadoadd4']; ?>, <?= $post['quantidadesalgado4']; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php }?>
+                    <?php if(isset($post['salgadoadd5'])){?>
+                    <div class="col-3">
+                        <br />
+                        <?php 
+                            $quantidade = $post['quantidadesalgado5'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+    
+    
+                            if ($qtd < 50){
+                                $preco += 20;
+                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
+                            }
+    
+                        ?>
+                        <p><?= $post['salgadoadd5']; ?>, <?= $post['quantidadesalgado5']; ?></p>
+                        <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    </div>
+                    <?php }?>
                 </div>
                 <?php }?>
             </div>
