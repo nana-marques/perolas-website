@@ -9,9 +9,10 @@
             </div>
             <hr>
             <div class="form-group row mt-4">
-                <h3 style="margin-top: 1em;">Bolo:</h3>
                 <div class="row container marketing">
-                    <br />
+                    <h3 style="margin-top: 1em;" class="ml-2">Bolo:</h3>
+                </div>
+                <div class="row container marketing">
                     <?php 
                         $tamanho = $post['tamanho'];
                         $massa = $post['massa'];
@@ -68,25 +69,26 @@
                         }
 
                     ?>
-                    <p><?= $post['tamanho']; ?>, <?= $post['massa']; ?>, <?= $post['decoracao']; ?></p>
-                    <br />
-                    <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
+                    <p class="col-3"><?= $post['tamanho']; ?>, <?= $post['massa']; ?>, <?= $post['decoracao']; ?></p>
+                    <p class="col-6" style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
                 </div>
-                <h3 style="margin-top: 1em;">Doces:</h3>
+                <div class="row container marketing">
+                    <h3 style="margin-top: 1em;" class="ml-2">Doces:</h3>
+                        <?php 
+                            $quantidade = $post['quantidade'];
+                            $qtd = ceil($quantidade / 5) * 5;
+                            $preco = 20;
+
+
+                            if ($qtd < 100){
+                                $preco += 20;
+                                echo "<p style='margin-top: 3em;' class='pt-2 ml-2 badge text-white bg-danger'>Selecione no minimo 100 docinhos!</p>";
+                            }
+
+                        ?>
+                </div>
                 <div class="row container marketing">
                     <div class="col-3">
-                    <?php 
-                        $quantidade = $post['quantidade'];
-                        $qtd = ceil($quantidade / 5) * 5;
-                        $preco = 20;
-
-
-                        if ($qtd < 100){
-                            $preco += 20;
-                            echo "<p class='pt-1 mt-1 badge text-white bg-danger'>Selecione no minimo 100 docinhos!</p>";
-                        }
-
-                    ?>
                     <p class=""><?= $post['docinho']; ?>, <?= $post['quantidade']; ?><?= isset($post['adicionaldocinho']) ? ($post['adicionaldocinho']) : ''; ?></p>
                     <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
                     </div>
@@ -182,28 +184,28 @@
                     <?php }?>
                 </div>
                 <?php if(isset($post['salgado'])){?>
-                <h3 style="margin-top: 1em;">Salgados:</h3>
-                <div class="row container marketing">
-                    <div class="col-3">
-                        <br />
+                <div class="row container marketing">   
+                    <h3 style="margin-top: 1em;" class="ml-2">Salgados:</h3>
                         <?php 
                             $quantidade = $post['quantidadesalgado'];
                             $qtd = ceil($quantidade / 5) * 5;
                             $preco = 20;
 
 
-                            if ($qtd < 50){
+                            if ($qtd < 100){
                                 $preco += 20;
-                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
+                                echo "<p style='margin-top: 3em;' class='pt-2 ml-2 badge bg-warning'>Selecione no minimo 100 salgados!</p>";
                             }
 
                         ?>
+                </div>
+                <div class="row container marketing">
+                    <div class="col-3">
                         <p><?= $post['salgado']; ?>, <?= $post['quantidadesalgado']; ?></p>
                         <p style="font-weight:bold;">Preço: R$<?= $preco ?>,00</p>
                     </div>
                     <?php if(isset($post['salgadoadd1'])){?>
                     <div class="col-3">
-                        <br />
                         <?php 
                             $quantidade = $post['quantidadesalgado1'];
                             $qtd = ceil($quantidade / 5) * 5;
@@ -212,7 +214,6 @@
     
                             if ($qtd < 50){
                                 $preco += 20;
-                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
                             }
     
                         ?>
@@ -222,7 +223,6 @@
                     <?php }?>
                     <?php if(isset($post['salgadoadd2'])){?>
                     <div class="col-3">
-                        <br />
                         <?php 
                             $quantidade = $post['quantidadesalgado2'];
                             $qtd = ceil($quantidade / 5) * 5;
@@ -231,7 +231,6 @@
     
                             if ($qtd < 50){
                                 $preco += 20;
-                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
                             }
     
                         ?>
@@ -241,7 +240,6 @@
                     <?php }?>
                     <?php if(isset($post['salgadoadd3'])){?>
                     <div class="col-3">
-                        <br />
                         <?php 
                             $quantidade = $post['quantidadesalgado3'];
                             $qtd = ceil($quantidade / 5) * 5;
@@ -250,7 +248,6 @@
     
                             if ($qtd < 50){
                                 $preco += 20;
-                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
                             }
     
                         ?>
@@ -260,7 +257,6 @@
                     <?php }?>
                     <?php if(isset($post['salgadoadd4'])){?>
                     <div class="col-3">
-                        <br />
                         <?php 
                             $quantidade = $post['quantidadesalgado4'];
                             $qtd = ceil($quantidade / 5) * 5;
@@ -269,7 +265,6 @@
     
                             if ($qtd < 50){
                                 $preco += 20;
-                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
                             }
     
                         ?>
@@ -279,7 +274,6 @@
                     <?php }?>
                     <?php if(isset($post['salgadoadd5'])){?>
                     <div class="col-3">
-                        <br />
                         <?php 
                             $quantidade = $post['quantidadesalgado5'];
                             $qtd = ceil($quantidade / 5) * 5;
@@ -288,7 +282,6 @@
     
                             if ($qtd < 50){
                                 $preco += 20;
-                                echo "<p class='pt-1 mt-1 badge text-dark bg-warning'>Selecione no minimo 50 salgados!</p>";
                             }
     
                         ?>
