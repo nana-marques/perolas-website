@@ -198,7 +198,7 @@
             $('#divsalgado').append(newDiv);
         });
         $('#btnaddDoce').click(function(){
-            count++;
+            countD++;
             var newDivDoce = $('<div class="col-lg-6 mt-3">\
             <div class="input-group">\
                 <div class="input-group-prepend">\
